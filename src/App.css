@@ -1,0 +1,451 @@
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  color : #302C2C;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.NavBackGround{
+  background-attachment: fixed;/*고정안돼는데...?*/
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+.Protfolio{
+  font-weight: bold;
+  font-size: 35px;
+
+}
+
+.NarPro{
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.ul NarBar{
+  float: left;
+}
+
+.NarBar{
+  color : #302C2C;
+  padding: 0px 30px;
+  float: left;
+  margin: 0px;
+}
+
+.NarBar li{
+  display: inline-block;
+  padding: 5px 30px;
+  font-weight: bold;
+}
+
+.NarBar a{
+  text-decoration: none;
+  font-size: 20px;
+  color:rgba(0,0,0,.55);
+}
+
+.NarBar a:hover{
+  color:#302C2C;
+}
+
+/*project와 같음 */
+.ProTitle{
+  width: auto;
+  height: 500px;
+  background-color: #c7E3D5;
+}
+
+/*project와 같음 */
+.ProTitle h3{
+  padding-top: 100px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 60px;
+}
+
+.ProTitle p{
+  text-align: center;
+  font-weight: 550;
+  font-size: 45px;
+}
+
+.ProTitle .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 35%;
+  border: none;
+  margin: auto;
+}
+
+.ProTitle .HrContent{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.ProNav{
+  background-color: #FAF8F8;
+}
+
+.ProTitle .ProBtn{
+  color : #FAF8F8;
+  background-color: #00A086;
+  border: none;
+  padding: 18px 32px 32px;
+  border-radius: 5px;
+}
+
+.ProTitle .ProBtn span{
+  position:absolute;
+  width: 18px;
+  height:20px;
+  background-image: url('DownButton.svg');
+}
+
+/*About SOL*/
+.AboutSol{
+  padding: 50px;
+  width: auto;
+  height: 820px;
+  background: #FAF8F8;
+}
+
+.AboutTitle{
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.AboutSol .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 15%;
+  border: none;
+  margin: auto;
+}
+
+.row{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/*parksol box*/
+.box{
+  padding: 83px;
+}
+
+
+.AboutTitle .row .col-md-4 .name{
+  background-image: url("./name.jpg");
+}
+
+.col-md-4 span{
+  font-size: 15px;
+}
+
+.col-md-4 p{
+  font-size: 15px;
+}
+
+.col-md-4 span.span1{
+  color: #747F00;
+}
+
+.col-md-4 span.span2{
+  color: #0d3692;
+}
+
+.parksol{
+  box-shadow: 15px 15px 15px #c7E3D5;
+  border-radius: 40px;
+  background-size: cover;
+  background-color: white;
+}
+
+/*Project*/
+.Project{
+  width: auto;
+  height: 1560px;
+  background-color: #c7E3D5;
+}
+
+.ProjectTitle{
+  padding: 50px 0px 0px 10px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.ProjectContent{
+  width: 45%;
+  height: 330px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.Project .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 10%;
+  border: none;
+  margin: auto;
+}
+
+.proMiniTitle{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+}
+
+.proMiniTitle h3{
+  padding-top: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.proMiniTitle p{
+  font-weight:750
+}
+
+.ProImg{
+  width: 60%;
+  height: 1000px;
+  background: #747F00;
+  float: left;
+}
+
+.ProContent{
+  width: 40%;
+  height: 1000px;
+  background: red;
+  float: left;
+}
+/*Skills*/
+.Skills{
+  padding-top: 50px;
+  width: auto;
+  height: 1820px;
+  background-color: white;
+}
+
+.Skills .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 7%;
+  border: none;
+  margin: auto;
+}
+
+/*Back-end Part*/
+.BackEnd{
+  display: inline-block;
+  width: 83%;
+  height: 230px;
+  background-color: #36BC9B;;
+  border-radius: 8px;
+}
+
+.col-md-3 p1{
+  color :#36BC9B; /*#14A492;*/
+}
+
+.col-md-3 p2{
+  color : #E8E8E8;
+}
+
+.back1{
+  display: inline-block;
+  padding-top: 10px;
+  width: 80%;
+  height: 180px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px #00A086;
+}
+
+.SkillPadding{
+  padding-top: 50px;
+}
+
+/*FrontEnd*/
+.FrontEnd{
+  display: inline-block;
+  width: 83%;
+  height: 230px;
+  background-color: #36BC9B;;
+  border-radius: 8px;
+}
+
+.front1{
+  display: inline-block;
+  padding-top:10px;
+  width: 80%;
+  height: 180px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px #00A086;
+}
+
+.SkillPadding{
+  padding-top: 25px;
+}
+
+.VersionControl{ 
+  display: inline-block;
+  width: 53%;
+  height: 230px;
+  background-color: #36BC9B;;
+  border-radius: 8px;
+}
+
+.verion1{
+  display: inline-block;
+  padding-top:10px;
+  width: 80%;
+  height: 180px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px #00A086;
+}
+
+/*Archiving*/
+.Archiving{
+  
+  width: auto;
+  height: 690px;
+  background-color: #333;
+}
+
+  .ArcTitle{
+    padding: 50px 0px 0px 10px;
+    font-size: 42px;
+    font-weight: bold;
+    color:white;
+  }
+
+.ArcContent{
+  width: 20%;
+  max-width: 1000px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 20px;
+  height: auto;
+} 
+
+
+.ArcContent a{
+  color: #302C2C;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ArcContent h5{
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.ArcContent li{
+  font-weight: bold;
+  padding: 3px;
+  text-align: left;
+}
+
+
+.Archiving .ProHr{
+  
+  color : #FFAE69;
+  height: 5px;
+  width: 15%;
+  border: none;
+  margin: auto;
+}
+
+.Final{
+  background-color: #222;
+  padding:30px;
+}
+
+.FinalIcons{
+  width: 32%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color: #222;
+}
+
+.FinalIcons::after{
+  clear: both;
+  display: block;
+  float: none;
+}
+
+.FinalIcons div{
+  float:left;
+  width: 25%;
+  background-color: white;
+  border-radius: 100px;
+}
+
+
+.FinalIcons2 h5{
+  float: none;
+  clear: both;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color:#302C2C;
+  color: white;
+  
+}
+
+.FinalIcons2 i {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.FinalIcons i{
+  width: 70%;
+  border-radius: 80px;
+  box-sizing: border-box;
+  color: black;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .ProTitle h3{
+    font-size: 35px;
+  }
+
+  .AboutSol .row{
+    font-size: 20px;
+  }
+
+  .FinalIcons{
+    width: 50%;
+  }
+   
+}
+
+.Final{
+  width: 100%;
+  height: 150px;
+  margin: 0px;
+  padding:0px;
+}
+@media screen and (max-width: 768px) {
+  .NarBar a{
+    font-size: 15px;
+  }
+
+  .FinalIcons div{
+    width: 100%;
+  }
+}
