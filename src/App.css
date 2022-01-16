@@ -85,6 +85,7 @@
 .ProTitle .HrContent{
   padding-top: 20px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .ProNav{
@@ -135,7 +136,7 @@
 
 /*parksol box*/
 .box{
-  padding: 83px;
+  padding-top: 120px;
 }
 
 
@@ -143,28 +144,65 @@
   background-image: url("./name.jpg");
 }
 
-.col-md-4 span{
-  font-size: 15px;
-}
-
 .col-md-4 p{
-  font-size: 15px;
+  font-size: 17px;
+  margin-bottom: 1%;
 }
 
-.col-md-4 span.span1{
+/*.col-md-4 span.span1{
   color: #747F00;
 }
 
 .col-md-4 span.span2{
   color: #0d3692;
 }
+*/
 
-.parksol{
-  box-shadow: 15px 15px 15px #c7E3D5;
-  border-radius: 40px;
-  background-size: cover;
-  background-color: white;
+.parksol img{
+  border-radius: 100%;
+  width: 70%;
 }
+
+.subway{
+  display: flex;
+  width: 80%;
+  margin-left: 170px;
+}
+
+.subway1{
+  width: 15%;
+  height: 22px;
+  background: #747F00;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.subway2{
+  width: 15%;
+  height: 22px;
+  background: #0d3692;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.subway3{
+  width: 15%;
+  height: 22px;
+  background: #33a23d;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 
 /*Project*/
 .Project{
@@ -229,7 +267,7 @@
 .Skills{
   padding-top: 50px;
   width: auto;
-  height: 1820px;
+  height: 1560px;
   background-color: white;
 }
 
@@ -275,7 +313,7 @@
 /*FrontEnd*/
 .FrontEnd{
   display: inline-block;
-  width: 83%;
+  width: 90%;
   height: 230px;
   background-color: #36BC9B;;
   border-radius: 8px;
@@ -284,11 +322,13 @@
 .front1{
   display: inline-block;
   padding-top:10px;
-  width: 80%;
+  width: 11.2%;
   height: 180px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 20px 20px 20px #00A086;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .SkillPadding{
@@ -297,7 +337,7 @@
 
 .VersionControl{ 
   display: inline-block;
-  width: 53%;
+  width: 43%;
   height: 230px;
   background-color: #36BC9B;;
   border-radius: 8px;
@@ -306,7 +346,7 @@
 .verion1{
   display: inline-block;
   padding-top:10px;
-  width: 80%;
+  width: 70%;
   height: 180px;
   background-color: white;
   border-radius: 8px;
@@ -360,9 +400,23 @@
 
 .Archiving .ProHr{
   
-  color : #FFAE69;
+  color : #32F5B1;
   height: 5px;
-  width: 15%;
+  width: 11%;
+  border: none;
+  margin: auto;
+}
+
+.Experience{
+  width: auto;
+  height: 1560px;
+  background-color: #c7E3D5;
+}
+
+.Experience .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 27%;
   border: none;
   margin: auto;
 }
@@ -387,13 +441,18 @@
   float: none;
 }
 
+
 .FinalIcons div{
   float:left;
   width: 25%;
   background-color: white;
   border-radius: 100px;
+  padding: 30px;
 }
 
+.FinalIcons2{
+  background:#302C2C;
+}
 
 .FinalIcons2 h5{
   float: none;
@@ -417,7 +476,6 @@
   box-sizing: border-box;
   color: black;
 }
-
 
 @media screen and (max-width: 1200px) {
   .ProTitle h3{

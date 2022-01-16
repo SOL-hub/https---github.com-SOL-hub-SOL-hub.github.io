@@ -16,6 +16,9 @@ import front5 from './FrontEnd/front5.png';
 import front6 from './FrontEnd/front6.png';
 import front7 from './FrontEnd/front7.png';
 import front8 from './FrontEnd/front8.png';
+import svn from './Version/svn.png';
+
+import Erdcloud from './Communication/Erdcloud.png';
 
 import notion from './notion.png';
 import naverBlog from './naverBlog.png';
@@ -60,13 +63,25 @@ function App() {
     <div className='row'>
 
         <div className='col-md-4'>
-          <div className='parksol'>
-        <img src={parksol} width='300' height='260' alt='parksol'/>
+              <div className='parksol'>
+                  <img src={parksol} width='350' height='340' alt='parksol'/>
           </div>
         </div>
         <div className='col-md-4'>
           <div className='box'>
            <i class="fas fa-user-check fa-2x" ></i> NAME<br/> 박 솔
+          </div>
+        </div>
+        
+        <div className='col-md-4'>
+        <div className='box'>
+          <i class="fas fa-subway fa-2x"></i> ADDRESS <br/>서울시 동작구<br/>
+            <p>(근처 지하철)</p>
+            <div className='subway'>
+            <div className='subway1'>상도역</div>
+            <div className='subway2'>노량진역</div>
+            <div className='subway3'>봉천역</div>
+            </div>
           </div>
         </div>
         <div className='col-md-4'>
@@ -77,16 +92,12 @@ function App() {
         <br/><br/>
         <div className='col-md-4'>
           <div className='box'>
-            <i class="fas fa-envelope fa-2x"></i> E-MAIL <br/> thfdl0317@naver.com</div>
+            <i class="fas fa-mobile-alt fa-2x"></i> TEL <br/>010-5267-2407
+            </div>
           </div>
         <div className='col-md-4'>
         <div className='box'>
-          <i class="fas fa-mobile-alt fa-2x"></i> TEL <br/>010-5267-2407</div>
-        </div>
-        <div className='col-md-4'>
-        <div className='box'>
-          <i class="fas fa-subway fa-2x"></i> ADDRESS <br/>서울시 동작구<br/>
-          <span className='span1'><h7>(近 지하철:</h7> 상도 7호선</span>, <span className='span2'>노량진 1,9호선)</span></div>
+        <i class="fas fa-envelope fa-2x"></i> E-MAIL <br/> thfdl0317@naver.com</div>
         </div>
     </div>
 </div>
@@ -120,7 +131,7 @@ function App() {
                 </div>
               </div>
               <div className='col-md-2'>
-                  <div className='back1'>GitHub<br/>
+                  <div className='back1 font'>HeidiSQL<br/>
                     <img src={back4} width='80' height='80' alt='back4'/>
                 </div>
               </div>
@@ -137,7 +148,7 @@ function App() {
 
     </div>
   </div>
-        <div className='SkillPadding'></div>
+      <div className='SkillPadding'></div>
 
         <div className='row'>
             <div className='col-md-3'><p2>Back-end</p2></div>
@@ -148,62 +159,36 @@ function App() {
 
         <div className='FrontEnd'>
         <div className='row'>
-              <div className='col-md-2'>
                 <div className='front1'>HTML<br/>
                   <img src={front1}width='80' height='80' alt='front1'/>
                 </div>
-              </div>
-        <div className='col-md-2'>
-            <div className='front1'>CSS<br/>
-              <img src={front2} width='80' height='80' alt='front2'/>
-           </div>
-        </div>
-              <div className='col-md-2'>
-                  <div className='back1'>JS ES6<br/>
-                    <img src={front3} width='80' height='80' alt='front3'/>
+                <div className='front1'>CSS<br/>
+                  <img src={front2} width='80' height='80' alt='front2'/>
                 </div>
-              </div>
-        <div className='col-md-2'>
-            <div className='front1'>TypeScript<br/>
-              <img src={front4} width='80' height='80' alt='front4'/>
-           </div>
-        </div>
-        <div className='col-md-2'>
-            <div className='front1'>React<br/>
-              <img src={front5} width='80' height='80' alt='front5'/>
-           </div>
-        </div>
-        <div className='col-md-2'>
-            <div className='front1'>Redux<br/>
-              <img src={front6} width='80' height='80' alt='front6'/>
-           </div>
+                <div className='front1'>JS ES6<br/>
+                  <img src={front3} width='80' height='80' alt='front3'/>
+                </div>
+                <div className='front1'>TypeScript<br/>
+                  <img src={front4} width='80' height='80' alt='front4'/>
+                </div>
+                <div className='front1'>React<br/>
+                  <i class="fab fa-react fa-3x"></i>
+                </div>
+                <div className='front1'>Redux<br/>
+                  <img src={front6} width='80' height='80' alt='front6'/>
         </div>
         
-        <div className='col-md-2'>
             <div className='front1'>Sass<br/>
               <img src={front7} width='80' height='80' alt='front7'/>
-           </div>
-        </div>
+            </div>
 
-        <div className='col-md-2'>
             <div className='front1'>JQUERY<br/>
               <img src={front8} width='80' height='80' alt='front8'/>
-           </div>
+            </div>
         </div>
-    </div>
     
-  </div>
+      </div>
 
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
-  <div className='SkillPadding'></div>
   <div className='SkillPadding'></div>
 
   <div className='row'>
@@ -216,24 +201,23 @@ function App() {
     <div className='VersionControl'>
       <div className='row'>
               <div className='col-md-4'>
-                  <div className='verion1'>Eclipse<br/>
-                    <img src={back1}width='80' height='80' alt='back1'/>
+                  <div className='verion1'>GitHub<br/>
+                  <i class="fab fa-github fa-3x"></i>
                   </div>
               </div>
               <div className='col-md-4'>
-                  <div className='verion1'>Spring<br/>
-                    <img src={back2} width='80' height='80' alt='back2'/>
+                  <div className='verion1'>SVN<br/>
+                    <img src={svn} width='80' height='80' alt='svn'/>
                 </div>
               </div>
               <div className='col-md-4'>
-                  <div className='verion1'>DBeaver<br/>
-                    <img src={back3} width='80' height='80' alt='back3'/>
+                  <div className='verion1'>Git<br/>
+                  <i class="fab fa-git-alt fa-3x"></i>
                 </div>
               </div>
      </div>
      </div>
 
-     <div className='SkillPadding'></div>
      <div className='SkillPadding'></div>
 
      <div className='row'>
@@ -246,18 +230,18 @@ function App() {
     <div className='VersionControl'>
       <div className='row'>
               <div className='col-md-4'>
-                  <div className='verion1'>Eclipse<br/>
-                    <img src={back1}width='80' height='80' alt='back1'/>
+                  <div className='verion1'>slack<br/>
+                  <i class="fab fa-slack fa-3x"></i>
                   </div>
               </div>
               <div className='col-md-4'>
-                  <div className='verion1'>Spring<br/>
-                    <img src={back2} width='80' height='80' alt='back2'/>
+                  <div className='verion1'>Erdcloud<br/>
+                    <img src={Erdcloud} width='80' height='80' alt='Erdcloud'/>
                 </div>
               </div>
               <div className='col-md-4'>
-                  <div className='verion1'>DBeaver<br/>
-                    <img src={back3} width='80' height='80' alt='back3'/>
+                  <div className='verion1'>figma<br/>
+                  <i class="fab fa-figma fa-3x"></i>
                 </div>
               </div>
      </div>
@@ -375,10 +359,20 @@ function App() {
           </div>
 
 
-            <div className='Project'>
+            <div className='Experience'>
             <div className='ProjectTitle'>Programming Experience</div>
               <hr className='ProHr'/><br/><br/>
-            <div className='ProjectContent'></div>
+            <div className='ProjectContent'>
+            <div className='proMiniTitle'>
+                <h3>보드살롱보드게임중고 사이트</h3>
+                  <p>2022년03월(사이드 프로젝트 7인)</p>
+            </div>
+                    <div className='ProImg'>
+                        <img src=''></img>
+                    </div>
+
+            </div>
+            
           </div>
 
           <div className='Project'>
@@ -390,16 +384,16 @@ function App() {
       <div className='Final'>
           <div className='FinalIcons'>
 
-              <div>
+              <div className='Icons'>
                 <h4><i class="fab fa-github fa-4x"></i></h4>
               </div>
-              <div>
+              <div className='Icons'>
                 <h4><img src={notion} width='96' height='96' alt='notion'/></h4>
               </div>
-              <div>
+              <div className='Icons'>
                 <h4><img src={naverBlog} width='96' height='96' alt='naverBlog'/></h4>
               </div>
-              <div>
+              <div className='Icons'>
                 <h4><i class="fab fa-facebook fa-4x"></i></h4>
               </div>
 
