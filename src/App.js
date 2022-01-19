@@ -86,7 +86,7 @@ function App() {
         </div>
         <div className='col-md-4'>
         <div className='box'>
-          <i class="fas fa-birthday-cake fa-2x"></i> BIRTH 94.03.17</div>
+          <i class="fas fa-birthday-cake fa-2x"></i> BIRTH <br/>94.03.17</div>
         </div>
         
         <br/><br/>
