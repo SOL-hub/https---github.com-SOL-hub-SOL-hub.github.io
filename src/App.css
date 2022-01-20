@@ -254,7 +254,6 @@
 .ProImg{
   width: 55%;
   height: 320px;
-  border: 1px solid #00A086;
   border-radius: 2px;
   float: left;
 }
@@ -486,7 +485,7 @@ li .git{
   background-color: white;
   border-radius: 8px;
   margin: 30px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .ExperienceContent2{

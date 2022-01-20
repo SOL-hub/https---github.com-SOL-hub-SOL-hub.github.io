@@ -597,14 +597,15 @@ function App() {
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
-                    <h5>교육기관 : KH정보교육원(당산점)</h5>
-                    <h5>교육기간 : 20.04.16~20.09.23</h5>
-                    <h5>교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
-                      <h5>교육내용 </h5>
+                    <h5><i class="fas fa-edit"></i> 교육기관 : KH정보교육원(당산점)</h5>
+                    <h5><i class="fas fa-edit"></i> 교육기간 : 20.04.16~20.09.23</h5>
+                    <h5><i class="fas fa-edit"></i> 교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
+                      <h5><i class="fas fa-edit"></i> 교육내용 </h5>
                         <p>- ORACLE SQL Programming, DB 기본부터 활용까지</p>
                         <p>- JAVA/ Servlet / JSP, jdbc/Spring Framework, Mybatis, Ajax</p>
                         <p>- HTML / CSS / JavaScript/JQuery</p>
                         <p>- 세미, 파이널팀 프로젝트 MVP패턴으로 진행</p>
+
                     </div>
                   
                     <div className='ExperienceContent2'></div>
