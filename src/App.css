@@ -219,8 +219,8 @@
 }
 
 .ProjectContent{
-  width: 70%;
-  height: 800px;
+  width: 67%;
+  height: auto;
   display: inline-block;
   background-color: white;
   border-radius: 8px;
@@ -255,6 +255,7 @@
   width: 55%;
   height: 320px;
   border: 1px solid #00A086;
+  border-radius: 2px;
   float: left;
 }
 
@@ -267,7 +268,16 @@
 .siteContent{
   font-weight: bold;
   font-size: 20px;
-  padding: 10px;
+  padding: 0px 20px;
+  text-align: left;
+}
+
+.ProContent hr{
+  color: #00A086;
+  height: 3px;
+  width: 90%;
+  border: none;
+  margin: auto;
 }
 
 .siteSkill{
@@ -291,15 +301,14 @@ ul{
   padding: 10px
 }
 
-ul li{
-  padding:3px
-}
-
-
-
 .siteSkillBody{
   width: 60%;
   display: inline-block;
+  font-size: 17px;
+}
+
+li .git{
+  font-size: 1x;
 }
 
 
@@ -449,16 +458,67 @@ ul li{
 
 .Experience{
   width: auto;
-  height: 1560px;
-  background-color: #c7E3D5;
+  height: auto;
+  background-color: #FAF8F8;
 }
+
 
 .Experience .ProHr{
   color : #00A086;
   height: 5px;
-  width: 27%;
+  width: 34%;
   border: none;
   margin: auto;
+}
+
+.ExperienceContent{
+  width: 100%;
+  height: 500px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.ExperienceContent1{
+  width: 30%;
+  
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.ExperienceContent2{
+  width: 30%;
+ 
+  background-color: white;
+  border-radius: 8px;
+  margin: 30px;
+}
+
+.Experience h5{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.ExperienceContent1 p{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/*Before Career*/
+.CareerContent{
+  width: 67%;
+  height: 550px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
 }
 
 .Final{

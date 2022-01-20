@@ -27,6 +27,12 @@ import notionlogo from './notionlogo.png';
 import naverlogo from './naverlogo.png';
 
 import 보드살롱 from './project-image/보드살롱.png';
+import houudoin from './project-image/houudoin.png';
+import Protfolio from './project-image/Protfolio.png';
+import DGIS from './project-image/DGIS.jpg';
+
+import lawyer3 from './project-image/lawyer3.png';
+import Oherp from './project-image/Oherp.png';
 
 
 function App() {
@@ -260,33 +266,14 @@ function App() {
         <p>2022년03월(사이드 프로젝트 7인)</p>
     </div>
     <div className='ProImg'>
-        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+        <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
 
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li>주요기능</li>
-        <li>Front-end</li>
-        <li>Back-end</li>
-        <li>Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
     </div>
 
     
     <div className='ProContent'>
         <div className='siteContent'>
-         보드게임 '특화' 중고거래 플랫폼, <br/>
+        보드게임 '특화' 중고거래 플랫폼, <br/>
 국내 중고 물품 거래할 때 다양한 보드게임 구성품들에 대한 확인단계를 보다 간편 만드는  
 전문적인 보드게임 중고 사이트로 
 구매자는 확인할 수 있는 정보를 최대한 수집하여, 중고 보드게임을 검색/필터/구매문의를 간편하게 .
@@ -294,30 +281,15 @@ function App() {
 구매자와 판매자의 원활한 소통의 장으로만드는 MVP서비스 플랫폼
         </div>
 
-        <hr className='ProHr'/><br/><br/>
-    </div>
-    
-  </div>
-  
-</div>
-
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>DGIS</h3>
-        <p>2021년07월 (주)소프트엔 </p>
-    </div>
-    <div className='ProImg'>
-        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+        <hr/>
 
         <div className='siteSkill'>        
       <div className='siteSkillHeader'> 
       <ul>
-        <li>주요기능</li>
-        <li>Front-end</li>
-        <li>Back-end</li>
-        <li>Git-hub</li>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
       </ul>
       </div>
 
@@ -331,22 +303,97 @@ function App() {
       </div>
     </div>
     </div>
+    
+    <br/>
+  </div>
+  
+</div>
 
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>Protfolio 웹사이트</h3>
+        <p>2022년01월 1인 개인프로젝트</p>
+    </div>
+    <div className='ProImg'>
+        <img src={Protfolio} width='630' height='315' alt='Protfolio'/>
+        
+
+    </div>
     
     <div className='ProContent'>
         <div className='siteContent'>
-        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
+        지금 보시는 웹사이트가 해당 사이트이며 <br/>
+        React에 배웠던 것을 활용하며 
+        직접 레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
+        경험할 수 있던 프로젝트입니다.  
         </div>
 
-          <hr/>
+        <hr/>
 
-        <div className='siteSkill'>
-            
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <br/><br/>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
 
-            <div className='appeal'>
+      <div className='siteSkillBody'>
+       <ul>
+                <li>자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무 경력, 활동사이트등을 간단히 소개</li>
+                <li>React, TypeScript, SASS</li>
+                <li className='git'>https://github.com/SOL-hub/SOL-sProtfolio</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
 
-            </div>
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>DGIS</h3>
+        <p>2021년07월 (주)소프트엔 - 프로젝트</p>
+    </div>
+    <div className='ProImg'>
+        <img src={DGIS} width='630' height='315' alt='DGIS'/>
+
+        
+    </div>
+
+    <div className='ProContent'>
+        <div className='siteContent'>
+        
         </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
     </div>
     
     <br/>
@@ -357,18 +404,27 @@ function App() {
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>사기꾼 잡는 변호사</h3>
-        <p>2021년06월 (주)소프트엔 </p>
+        <p>2021년 06월 (주)소프트엔 - 프로젝트 </p>
     </div>
     <div className='ProImg'>
-        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+      <img src={lawyer3} width='602' height='305' alt='lawyer3'/>
+
+    </div>
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플
+        </div>
+
+        <hr/>
 
         <div className='siteSkill'>        
       <div className='siteSkillHeader'> 
       <ul>
-        <li>주요기능</li>
-        <li>Front-end</li>
-        <li>Back-end</li>
-        <li>Git-hub</li>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
       </ul>
       </div>
 
@@ -381,45 +437,35 @@ function App() {
               </ul>
       </div>
     </div>
-    </div>
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
-        </div>
-
-          <hr/>
-
-        <div className='siteSkill'>
-            
-
-            <div className='appeal'>
-
-            </div>
-        </div>
     </div>
     
     <br/>
   </div>
 </div>
 
-
 <div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
-      <h3>Oherp!2</h3>
+      <h3>Oherp!</h3>
         <p>2020년08월 </p>
     </div>
     <div className='ProImg'>
-        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+        <img src={Oherp} width='602' height='315' alt='Oherp'/>
+    </div>
+    
+    <div className='ProContent'>
+        <div className='siteContent'>인사관리를 위한 통합 솔루션
+        </div>
+
+        <hr/>
 
         <div className='siteSkill'>        
       <div className='siteSkillHeader'> 
       <ul>
-        <li>주요기능</li>
-        <li>Front-end</li>
-        <li>Back-end</li>
-        <li>Git-hub</li>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
       </ul>
       </div>
 
@@ -432,22 +478,6 @@ function App() {
               </ul>
       </div>
     </div>
-    </div>
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        인사관리, 근태관리, 출퇴근 관리 및 게시판으로 회사원관리와 팀들간의 편안, 재미의 소통공간인 사이트
-        </div>
-
-          <hr/>
-
-        <div className='siteSkill'>
-            
-
-            <div className='appeal'>
-
-            </div>
-        </div>
     </div>
     
     <br/>
@@ -458,30 +488,11 @@ function App() {
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>houudoin</h3>
-        <p>2020년08월 </p>
+        <p>2020년07월 </p>
     </div>
     <div className='ProImg'>
-        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+        <img src={houudoin} width='520' height='300' alt='houudoin'/>
 
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li>주요기능</li>
-        <li>Front-end</li>
-        <li>Back-end</li>
-        <li>Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
     </div>
 
     
@@ -490,19 +501,34 @@ function App() {
         일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
         </div>
 
-          <hr/>
+        <hr/>
 
-        <div className='siteSkill'>
-            
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> 도메인</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
 
-            <div className='appeal'>
-
-            </div>
-        </div>
+      <div className='siteSkillBody'>
+       <ul>
+                <li>필터 기능 후 제품 제공/구매/포인트 적립</li>
+                <li>JavaScript</li>
+                <li>Eclipse, Java, DBeaver</li>
+                <li>http://www.sysout.co.kr/houudoin/</li>
+                <li>https://github.com/SOL-hub/semi</li>
+              </ul>
+      </div>
+    </div>
     </div>
     
     <br/>
   </div>
+  <br/><br/><br/>
 </div>
 
 
@@ -569,15 +595,20 @@ function App() {
             <div className='Experience'>
             <div className='ProjectTitle'>Programming Experience</div>
               <hr className='ProHr'/><br/><br/>
-            <div className='ProjectContent'>
-            <div className='proMiniTitle'>
-                <h3>보드살롱보드게임중고 사이트</h3>
-                  <p>2022년03월(사이드 프로젝트 7인)</p>
-            </div>
-                    <div className='ProImg'>
-                        <img src=''></img>
+            <div className='ExperienceContent'>
+                    <div className='ExperienceContent1'>
+                    <h5>교육기관 : KH정보교육원(당산점)</h5>
+                    <h5>교육기간 : 20.04.16~20.09.23</h5>
+                    <h5>교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
+                      <h5>교육내용 </h5>
+                        <p>- ORACLE SQL Programming, DB 기본부터 활용까지</p>
+                        <p>- JAVA/ Servlet / JSP, jdbc/Spring Framework, Mybatis, Ajax</p>
+                        <p>- HTML / CSS / JavaScript/JQuery</p>
+                        <p>- 세미, 파이널팀 프로젝트 MVP패턴으로 진행</p>
                     </div>
-
+                  
+                    <div className='ExperienceContent2'></div>
+           
             </div>
             
           </div>
@@ -586,6 +617,7 @@ function App() {
             <div className='ProjectTitle'>Before Career</div>
               <hr className='ProHr'/><br/><br/>
             <div className='ProjectContent'></div>
+            
           </div>
 
       <div className='Final'>
