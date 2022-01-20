@@ -254,8 +254,70 @@ function App() {
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
-      <h3>보드살롱보드게임중고 사이트</h3>
+      <h3>보드살롱 보드게임중고거래 사이트</h3>
         <p>2022년03월(사이드 프로젝트 7인)</p>
+    </div>
+    <div className='ProImg'>
+        <img src=''></img>
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+         보드게임 '특화' 중고거래 플랫폼, <br/>
+국내 중고 물품 거래할 때 다양한 보드게임 구성품들에 대한 확인단계를 보다 간편 만드는  
+전문적인 보드게임 중고 사이트로 
+구매자는 확인할 수 있는 정보를 최대한 수집하여, 중고 보드게임을 검색/필터/구매문의를 간편하게 .
+판매자는 최대한의 정보를 입력하여 중고 보드게임을 판매할 수 있도록 하는 것을 목표로한
+구매자와 판매자의 원활한 소통의 장으로만드는 MVP서비스 플랫폼
+        </div>
+
+        <hr className='ProHr'/><br/><br/>
+        
+        <div className='siteSkill'>
+
+          <div className='siteSkillHeader'>
+              dsfdfsdf
+          </div>
+
+          <div className='siteSkillBody'>
+
+          </div>
+            <table>
+              <thead>
+              <tr>
+                <th colspan="3">주요기능</th>
+                <th colspan="3">front-end</th>
+                <th colspan="3">Back-end</th>
+                <th colspan="3">git-hub</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>검색/필터/구매문의</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div className='appeal'>
+
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>DGIS</h3>
+        <p>2021년07월 (주)소프트엔 </p>
     </div>
     <div className='ProImg'>
         <img src=''></img>
@@ -270,39 +332,117 @@ function App() {
           <hr/>
 
         <div className='siteSkill'>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            
 
             <div className='appeal'>
 
             </div>
         </div>
     </div>
-
-
-
+    
+    <br/>
   </div>
 </div>
+
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>사기꾼 잡는 변호사</h3>
+        <p>2021년06월 (주)소프트엔 </p>
+    </div>
+    <div className='ProImg'>
+        <img src=''></img>
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
+        </div>
+
+          <hr/>
+
+        <div className='siteSkill'>
+            
+
+            <div className='appeal'>
+
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>Oherp!2</h3>
+        <p>2020년08월 </p>
+    </div>
+    <div className='ProImg'>
+        <img src=''></img>
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        인사관리, 근태관리, 출퇴근 관리 및 게시판으로 회사원관리와 팀들간의 편안, 재미의 소통공간인 사이트
+        </div>
+
+          <hr/>
+
+        <div className='siteSkill'>
+            
+
+            <div className='appeal'>
+
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+<div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>houudoin</h3>
+        <p>2020년08월 </p>
+    </div>
+    <div className='ProImg'>
+        <img src=''></img>
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
+        </div>
+
+          <hr/>
+
+        <div className='siteSkill'>
+            
+
+            <div className='appeal'>
+
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+
+
+
+
+
 
 
             <div className='Archiving'>

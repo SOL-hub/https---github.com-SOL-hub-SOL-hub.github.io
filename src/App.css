@@ -207,8 +207,9 @@
 /*Project*/
 .Project{
   width: auto;
-  height: 1560px;
+  height: auto;
   background-color: #c7E3D5;
+  padding: 30px;
 }
 
 .ProjectTitle{
@@ -218,12 +219,12 @@
 }
 
 .ProjectContent{
-  width: 45%;
-  height: 330px;
+  width: 70%;
+  height: autopx;
   display: inline-block;
   background-color: white;
   border-radius: 8px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .Project .ProHr{
@@ -263,6 +264,29 @@
   background: red;
   float: left;
 }
+
+.siteContent{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.siteSkill{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.siteSkillHeader{
+  width: 20%;
+  padding: 10px;
+}
+
+.siteSkillBody{
+  width: 80%;
+
+}
+
 /*Skills*/
 .Skills{
   padding-top: 50px;
@@ -457,7 +481,7 @@
 .FinalIcons2 h5{
   float: none;
   clear: both;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   padding: 10px;
   background-color:#302C2C;
