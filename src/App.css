@@ -220,7 +220,7 @@
 
 .ProjectContent{
   width: 70%;
-  height: autopx;
+  height: 800px;
   display: inline-block;
   background-color: white;
   border-radius: 8px;
@@ -252,16 +252,15 @@
 }
 
 .ProImg{
-  width: 60%;
-  height: 1000px;
-  background: #747F00;
+  width: 55%;
+  height: 320px;
+  border: 1px solid #00A086;
   float: left;
 }
 
 .ProContent{
-  width: 40%;
-  height: 1000px;
-  background: red;
+  width: 45%;
+  height: auto;
   float: left;
 }
 
@@ -274,18 +273,35 @@
 .siteSkill{
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 30px 10px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .siteSkillHeader{
-  width: 20%;
-  padding: 10px;
+  width: 30%;
+  vertical-align: top;
+  float: left;
+  font-weight: 900;
 }
+
+ul{
+  list-style-type: none;
+  text-align: left;
+  padding: 10px
+}
+
+ul li{
+  padding:3px
+}
+
+
 
 .siteSkillBody{
-  width: 80%;
-
+  width: 60%;
+  display: inline-block;
 }
+
 
 /*Skills*/
 .Skills{

@@ -26,6 +26,8 @@ import salLong from './salLong.png';
 import notionlogo from './notionlogo.png';
 import naverlogo from './naverlogo.png';
 
+import 보드살롱 from './project-image/보드살롱.png';
+
 
 function App() {
   return (
@@ -258,7 +260,27 @@ function App() {
         <p>2022년03월(사이드 프로젝트 7인)</p>
     </div>
     <div className='ProImg'>
-        <img src=''></img>
+        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li>주요기능</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
     </div>
 
     
@@ -273,45 +295,10 @@ function App() {
         </div>
 
         <hr className='ProHr'/><br/><br/>
-        
-        <div className='siteSkill'>
-
-          <div className='siteSkillHeader'>
-          주요기능
-          </div>
-
-          <div className='siteSkillBody'>
-          검색/필터/구매문의
-          </div>
-            <table className='vertical-2'>
-              <tr>
-                <th>주요기능</th>
-                <td>front-end</td>
-                <td>back-end</td>
-                <td>git-hub</td>   
-              </tr>
-              <tr>
-                <th>주요기능</th>
-                <td>front-end</td>
-                <td>back-end</td>
-                <td>git-hub</td>   
-              </tr>
-              <tr>
-                <th>주요기능</th>
-                <td>front-end</td>
-                <td>back-end</td>
-                <td>git-hub</td>   
-              </tr>
-            </table>
-
-            <div className='appeal'>
-
-            </div>
-        </div>
     </div>
     
-    <br/>
   </div>
+  
 </div>
 
 
@@ -322,7 +309,27 @@ function App() {
         <p>2021년07월 (주)소프트엔 </p>
     </div>
     <div className='ProImg'>
-        <img src=''></img>
+        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li>주요기능</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
     </div>
 
     
@@ -353,9 +360,28 @@ function App() {
         <p>2021년06월 (주)소프트엔 </p>
     </div>
     <div className='ProImg'>
-        <img src=''></img>
-    </div>
+        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
 
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li>주요기능</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
+    </div>
     
     <div className='ProContent'>
         <div className='siteContent'>
@@ -385,9 +411,28 @@ function App() {
         <p>2020년08월 </p>
     </div>
     <div className='ProImg'>
-        <img src=''></img>
-    </div>
+        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
 
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li>주요기능</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
+    </div>
     
     <div className='ProContent'>
         <div className='siteContent'>
@@ -416,7 +461,27 @@ function App() {
         <p>2020년08월 </p>
     </div>
     <div className='ProImg'>
-        <img src=''></img>
+        <img src={보드살롱} width='520' height='300' alt='보드살롱'/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li>주요기능</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
     </div>
 
     
