@@ -277,29 +277,31 @@ function App() {
         <div className='siteSkill'>
 
           <div className='siteSkillHeader'>
-              dsfdfsdf
+          주요기능
           </div>
 
           <div className='siteSkillBody'>
-
+          검색/필터/구매문의
           </div>
-            <table>
-              <thead>
+            <table className='vertical-2'>
               <tr>
-                <th colspan="3">주요기능</th>
-                <th colspan="3">front-end</th>
-                <th colspan="3">Back-end</th>
-                <th colspan="3">git-hub</th>
+                <th>주요기능</th>
+                <td>front-end</td>
+                <td>back-end</td>
+                <td>git-hub</td>   
               </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>검색/필터/구매문의</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
+              <tr>
+                <th>주요기능</th>
+                <td>front-end</td>
+                <td>back-end</td>
+                <td>git-hub</td>   
+              </tr>
+              <tr>
+                <th>주요기능</th>
+                <td>front-end</td>
+                <td>back-end</td>
+                <td>git-hub</td>   
+              </tr>
             </table>
 
             <div className='appeal'>
