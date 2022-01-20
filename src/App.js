@@ -24,7 +24,7 @@ import notion from './notion.png';
 import naverBlog from './naverBlog.png';
 import salLong from './salLong.png';
 import notionlogo from './notionlogo.png';
-import naverlogo from './naverlogo.png';
+import tistory from './tistory.jpg';
 
 import 보드살롱 from './project-image/보드살롱.png';
 import houudoin from './project-image/houudoin.png';
@@ -62,7 +62,7 @@ function App() {
   <p>웹 개발자 SOL's 포토폴리오</p>
   <hr className='ProHr'/>
   <p className='HrContent'>안녕하십니까<br/>프론트단공부가 취미인 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
-  <button className='ProBtn'>자세히 알아보기 <br/><span></span></button>
+  <button className='ProBtn'>자세히 알아보기 <br/></button>
 
 </div>
 <div className='AboutSol'>
@@ -263,7 +263,7 @@ function App() {
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>보드살롱 보드게임중고거래 사이트</h3>
-        <p>2022년03월(사이드 프로젝트 7인)</p>
+        <p>2022년03월(7인 사이드 프로젝트)</p>
     </div>
     <div className='ProImg'>
         <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
@@ -273,12 +273,11 @@ function App() {
     
     <div className='ProContent'>
         <div className='siteContent'>
-        보드게임 '특화' 중고거래 플랫폼, <br/>
-국내 중고 물품 거래할 때 다양한 보드게임 구성품들에 대한 확인단계를 보다 간편 만드는  
-전문적인 보드게임 중고 사이트로 
-구매자는 확인할 수 있는 정보를 최대한 수집하여, 중고 보드게임을 검색/필터/구매문의를 간편하게 .
-판매자는 최대한의 정보를 입력하여 중고 보드게임을 판매할 수 있도록 하는 것을 목표로한
-구매자와 판매자의 원활한 소통의 장으로만드는 MVP서비스 플랫폼
+        전문적인 보드게임 중고 사이트<br/>
+        구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를
+        할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여
+        초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며
+        개발할 수 있었던 프로젝트입니다.
         </div>
 
         <hr/>
@@ -312,8 +311,8 @@ function App() {
 <div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
-      <h3>Protfolio 웹사이트</h3>
-        <p>2022년01월 1인 개인프로젝트</p>
+      <h3>Protfolio 웹 사이트</h3>
+        <p>2022년01월(1인 개인프로젝트)</p>
     </div>
     <div className='ProImg'>
         <img src={Protfolio} width='630' height='315' alt='Protfolio'/>
@@ -325,7 +324,7 @@ function App() {
         <div className='siteContent'>
         지금 보시는 웹사이트가 해당 사이트이며 <br/>
         React에 배웠던 것을 활용하며 
-        직접 레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
+        레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
         경험할 수 있던 프로젝트입니다.  
         </div>
 
@@ -363,7 +362,7 @@ function App() {
         <p>2021년07월 (주)소프트엔 - 프로젝트</p>
     </div>
     <div className='ProImg'>
-        <img src={DGIS} width='630' height='315' alt='DGIS'/>
+        <img src={DGIS} width='580' height='315' alt='DGIS'/>
 
         
     </div>
@@ -388,8 +387,8 @@ function App() {
       <div className='siteSkillBody'>
        <ul>
                 <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
+                <li>JQUERY, HTML, CSS</li>
+                <li>Eclipse, Java, MYSQL</li>
                 <li>https://github.com/bogusipda</li>
               </ul>
       </div>
@@ -413,7 +412,10 @@ function App() {
     
     <div className='ProContent'>
         <div className='siteContent'>
-        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플
+        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플입니다.
+        ERD설계와 클라이언트의 수정사항을 UI기획 기획서를 작업하며 진행했습니다.
+        MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 
+        기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.
         </div>
 
         <hr/>
@@ -430,9 +432,9 @@ function App() {
 
       <div className='siteSkillBody'>
        <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
+                <li>상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인</li>
+                <li>JQuery, HTML, CSS</li>
+                <li>Eclipse, Java, HeidiSQL</li>
                 <li>https://github.com/bogusipda</li>
               </ul>
       </div>
@@ -579,7 +581,7 @@ function App() {
                   </ul>
                 </div>
                 <div className='ArcContent'>
-                <img src={naverlogo} width='280' height='128'alt='naverlogo'/>
+                <img src={tistory} width='280' height='128'alt='tistory'/>
                 <a href='https://blog.naver.com/thfdl0317'> https://blog.naver.com/thfdl0317</a>
                 <hr/>
                     <h5>지식공유, 공부정리 목적의 블로그</h5>
@@ -597,6 +599,7 @@ function App() {
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
+                      <h5>프로그래밍 교육</h5>
                     <h5><i class="fas fa-edit"></i> 교육기관 : KH정보교육원(당산점)</h5>
                     <h5><i class="fas fa-edit"></i> 교육기간 : 20.04.16~20.09.23</h5>
                     <h5><i class="fas fa-edit"></i> 교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
@@ -608,24 +611,70 @@ function App() {
 
                     </div>
                   
-                    <div className='ExperienceContent2'></div>
+                    <div className='ExperienceContent2'>
+                    <h5>팀프로젝트 & 개인적 개발공부목록(최신 기록)</h5>
+                    <h5><i class="fas fa-edit"></i> 팀프로젝트 : 사이드프로젝트(보드게임 중고거래 플랫폼)</h5> 
+                                                                <p>- 프론트엔드 REACT + typescript 개발</p>
+                    <h5><i class="fas fa-edit"></i> 개인적으로 공부하고 있는 프로그래밍 언어들</h5>
+                        <p>- Spring Boot (인프런 코딩강의)</p>
+                        <p>- JavaScript 객체지향 & ES6 신문법</p>
+                        <p>- React + typescript + Redux 활용</p>
+                        <p>- 정보처리기사 실기 시험준비 중</p>
+                    </div>
            
             </div>
             
           </div>
 
-          <div className='Project'>
+          <div className='BeforeCareer'>
             <div className='ProjectTitle'>Before Career</div>
               <hr className='ProHr'/><br/><br/>
-            <div className='ProjectContent'></div>
-            
-          </div>
+            <div className='ExperienceContent'>
+                    <div className='BeforeCareerContent1'>
+                     
+                    
+            <h5><i class="fas fa-briefcase fa-2x"></i> 이전 경력</h5> 
+              <h5>
+              ㈜ 소프트엔 - 개발본부 
+              </h5>
+              <p>- 근무기간 : 2020년 11월~2021년 11월</p>
+              <p>- 프로젝트 개발, UI상세설계서 작업, 일본어번역 등</p>
+
+              <h5>인피니트 - 영업부</h5>
+
+              <p>- 근무기간 : 2018년 05월~2019년 10월</p>
+              <p>- 업무내용 : 일본회사와 거래 및 견적상담, 번역, 수주 및 발주관리</p>
+
+               </div>
+
+              <div className='BeforeCareerContent2'>
+                     
+                    
+            <h5><i class="fas fa-plane fa-2x"></i> 이전 활동</h5> 
+            <h5>일본 유학 교환학생 & 워킹홀리데이 (약 2년)</h5>
+
+              <p>- 한국어 강사(나고야), 리조또 파견사원(오사카 및 아와지시마)</p>
+              <p>- 국제 문화교류센터 통역 및 중,고등학교 한국 소개활동 등<br/>
+              (시코쿠 마쯔야마)</p>
+
+            <h5><i class="fas fa-user-graduate fa-2x"></i> 평택대학교 광고홍보학과 졸업</h5>
+
+              <p>- 재학기간 : 2013년 3월 ~ 2018년 8월</p>
+
+              
+                                  </div>
+
+                                  </div>
+                        
+                          
+                          
+                        </div>
 
       <div className='Final'>
           <div className='FinalIcons'>
 
               <div className='Icons'>
-                <h4><i class="fab fa-github fa-4x"></i></h4>
+                <h4><i class="fab fa-github fa-4x"></i><link to='https://github.com/SOL-hub'/></h4>
               </div>
               <div className='Icons'>
                 <h4><img src={notion} width='96' height='96' alt='notion'/></h4>
@@ -641,7 +690,7 @@ function App() {
           </div>
           
           <div className='FinalIcons2'>
-            <h5><i class="far fa-copyright"></i> 2022. SOL PARK. All rights reserved. </h5>
+            <h5><i class="far fa-copyright"></i>2022. SOL PARK. All rights reserved. </h5>
           </div>
           </div>
 </div>

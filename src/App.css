@@ -96,7 +96,7 @@
   color : #FAF8F8;
   background-color: #00A086;
   border: none;
-  padding: 18px 32px 32px;
+  padding: 18px 32px 28px;
   border-radius: 5px;
 }
 
@@ -282,7 +282,7 @@
 .siteSkill{
   width: 100%;
   height: auto;
-  padding: 30px 10px;
+  padding: 5px 10px;
   display: inline-block;
   font-size: 20px;
 }
@@ -303,7 +303,8 @@ ul{
 .siteSkillBody{
   width: 60%;
   display: inline-block;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 li .git{
@@ -465,22 +466,21 @@ li .git{
 .Experience .ProHr{
   color : #00A086;
   height: 5px;
-  width: 34%;
+  width: 27%;
   border: none;
   margin: auto;
 }
 
 .ExperienceContent{
   width: 100%;
-  height: 500px;
+  height: 450px;
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
 
 .ExperienceContent1{
-  width: 30%;
-  
+  width: 31%;
   display: inline-block;
   background-color: white;
   border-radius: 8px;
@@ -489,12 +489,13 @@ li .git{
 }
 
 .ExperienceContent2{
-  width: 30%;
- 
+  width: 31%;
   background-color: white;
   border-radius: 8px;
   margin: 30px;
+  padding: 20px;
 }
+
 
 .Experience h5{
   text-align: left;
@@ -508,30 +509,84 @@ li .git{
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
+  margin: 2px;
+}
+.ExperienceContent2 p{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
+
 /*Before Career*/
-.CareerContent{
-  width: 67%;
-  height: 550px;
-  display: inline-block;
+.BeforeCareer{
+  width: auto;
+  height: auto;
   background-color: white;
+}
+
+.BeforeCareer .ProHr{
+  color : #00A086;
+  height: 5px;
+  width: 14%;
+  border: none;
+  margin: auto;
+}
+
+
+
+.BeforeCareerContent1{
+  width: 31%;
+  height: auto;
+  display: inline-block;
+  background-color:#FAF8F8;
   border-radius: 8px;
-  padding: 40px;
+  /*border: 5px solid #00A086;*/
+  padding: 20px;
+  margin: 30px;
+}
+
+.BeforeCareerContent2{
+  width: 31%;
+  height: auto;
+  display: inline-block;
+  background-color:#FAF8F8;
+  border-radius: 8px;
+  /*border: 5px solid #00A086;*/
+  padding: 20px;
+  margin: 30px;
+}
+
+.BeforeCareer h5{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.BeforeCareerContent1 p, .BeforeCareerContent2 p{
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 .Final{
-  background-color: #222;
-  padding:30px;
+  background-color: #302C2C;
+  padding:5px;
 }
 
 .FinalIcons{
-  width: 32%;
+  width: 22%;
   max-width: 1000px;
   margin: auto;
   margin-top: 100px;
-  margin-bottom: 50px;
-  background-color: #222;
+  display: flex;
+}
+
+h4 i{
+  color: white;
 }
 
 .FinalIcons::after{
@@ -542,11 +597,7 @@ li .git{
 
 
 .FinalIcons div{
-  float:left;
-  width: 25%;
-  background-color: white;
-  border-radius: 100px;
-  padding: 30px;
+  padding: 5px;
 }
 
 .FinalIcons2{
@@ -564,15 +615,14 @@ li .git{
   
 }
 
-.FinalIcons2 i {
+.FinalIcons2 i{
   vertical-align: middle;
   padding: 10px;
+  color: white;
+  border-radius: 100;
 }
 
 .FinalIcons i{
-  width: 70%;
-  border-radius: 80px;
-  box-sizing: border-box;
   color: black;
 }
 
@@ -591,12 +641,6 @@ li .git{
    
 }
 
-.Final{
-  width: 100%;
-  height: 150px;
-  margin: 0px;
-  padding:0px;
-}
 @media screen and (max-width: 768px) {
   .NarBar a{
     font-size: 15px;
