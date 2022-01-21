@@ -21,7 +21,7 @@ import svn from './Version/svn.png';
 import Erdcloud from './Communication/Erdcloud.png';
 
 import notion from './notion.png';
-import naverBlog from './naverBlog.png';
+import tistoryLogo from './tistoryLogo.png';
 import salLong from './salLong.png';
 import notionlogo from './notionlogo.png';
 import tistory from './tistory.jpg';
@@ -676,11 +676,9 @@ function App() {
               <div className='Icons'>
                 <h4><i class="fab fa-github fa-4x"></i><link to='https://github.com/SOL-hub'/></h4>
               </div>
+             
               <div className='Icons'>
-                <h4><img src={notion} width='96' height='96' alt='notion'/></h4>
-              </div>
-              <div className='Icons'>
-                <h4><img src={naverBlog} width='96' height='96' alt='naverBlog'/></h4>
+                <h4><img src={tistoryLogo} width='96' height='96' alt='tistoryLogo'/></h4>
               </div>
               <div className='Icons'>
                 <h4><i class="fab fa-facebook fa-4x"></i></h4>
