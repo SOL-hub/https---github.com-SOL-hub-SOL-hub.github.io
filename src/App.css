@@ -13,11 +13,16 @@
   position: fixed;
   width: 100%;
   max-width: 100%;
+  height: 70px;
+  background: #F8F9FA;
+  padding: 5px;
+
 }
 
 .Protfolio{
   font-weight: bold;
   font-size: 35px;
+  float: left;
 
 }
 
@@ -26,15 +31,9 @@
   font-weight: bold;
 }
 
-.ul NarBar{
-  float: left;
-}
-
 .NarBar{
   color : #302C2C;
-  padding: 0px 30px;
-  float: left;
-  margin: 0px;
+  float: right;
 }
 
 .NarBar li{

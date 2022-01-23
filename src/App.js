@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar,Container } from 'react-bootstrap';
+import { Link, Router } from 'react-router-dom';
 import parksol from './parksol.jpg';
 import back1 from './BackEnd/back1.png';
 import back2 from './BackEnd/back2.png';
@@ -33,27 +33,25 @@ import DGIS from './project-image/DGIS.jpg';
 
 import lawyer3 from './project-image/lawyer3.png';
 import Oherp from './project-image/Oherp.png';
+import { useState } from 'react';
 
 
 function App() {
+
+  let [NarBarTitle, NarBarTitleChange] = useState(['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'])
+
   return (
     <div className="App">
   <div className='NavBackGround'>
-     <Navbar bg="light" expand="lg">
-  <Container fluid>
-    <Navbar.Brand className='Protfolio'>SOL's Protfolio</Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarScroll" />
+    <div className='Protfolio'>SOL's Protfolio</div>
     <ul className='NarBar'>
-        <li><a href="#action1">About Sol</a></li>
-        <li><a href="#action1">Skills</a></li>
-        <li><a href="#action1">Projects</a></li>
-        <li><a href="#action1">Archiving</a></li>
-        <li><a href="#action1">Programming Experience</a></li>
-        <li><a href="#action1">Before Career</a></li>
+        <li><a href="#action1">{NarBarTitle[0]}</a></li>
+        <li><a href="#action1">{NarBarTitle[1]}</a></li>
+        <li><a href="#action1">{NarBarTitle[2]}</a></li>
+        <li><a href="#action1">{NarBarTitle[3]}</a></li>
+        <li><a href="#action1">{NarBarTitle[4]}</a></li>
+        <li><a href="#action1">{NarBarTitle[5]}</a></li>
       </ul>
-  </Container>
-
-</Navbar>
 
 </div>
 
@@ -257,288 +255,12 @@ function App() {
   </div>
 
 
-<div className='Project'>
-  <div className='ProjectTitle'>Projects</div>
-    <hr className='ProHr'/><br/><br/>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>보드살롱 보드게임중고거래 사이트</h3>
-        <p>2022년03월(7인 사이드 프로젝트)</p>
-    </div>
-    <div className='ProImg'>
-        <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
-
-    </div>
-
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        전문적인 보드게임 중고 사이트<br/>
-        구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를
-        할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여
-        초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며
-        개발할 수 있었던 프로젝트입니다.
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-  
-</div>
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>Protfolio 웹 사이트</h3>
-        <p>2022년01월(1인 개인프로젝트)</p>
-    </div>
-    <div className='ProImg'>
-        <img src={Protfolio} width='630' height='315' alt='Protfolio'/>
-        
-
-    </div>
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        지금 보시는 웹사이트가 해당 사이트이며 <br/>
-        React에 배웠던 것을 활용하며 
-        레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
-        경험할 수 있던 프로젝트입니다.  
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <br/><br/>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무 경력, 활동사이트등을 간단히 소개</li>
-                <li>React, TypeScript, SASS</li>
-                <li className='git'>https://github.com/SOL-hub/SOL-sProtfolio</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-</div>
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>DGIS</h3>
-        <p>2021년07월 (주)소프트엔 - 프로젝트</p>
-    </div>
-    <div className='ProImg'>
-        <img src={DGIS} width='580' height='315' alt='DGIS'/>
-
-        
-    </div>
-
-    <div className='ProContent'>
-        <div className='siteContent'>
-        
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>검색/필터/구매문의</li>
-                <li>JQUERY, HTML, CSS</li>
-                <li>Eclipse, Java, MYSQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-</div>
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>사기꾼 잡는 변호사</h3>
-        <p>2021년 06월 (주)소프트엔 - 프로젝트 </p>
-    </div>
-    <div className='ProImg'>
-      <img src={lawyer3} width='602' height='305' alt='lawyer3'/>
-
-    </div>
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플입니다.
-        ERD설계와 클라이언트의 수정사항을 UI기획 기획서를 작업하며 진행했습니다.
-        MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 
-        기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인</li>
-                <li>JQuery, HTML, CSS</li>
-                <li>Eclipse, Java, HeidiSQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-</div>
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>Oherp!</h3>
-        <p>2020년08월 </p>
-    </div>
-    <div className='ProImg'>
-        <img src={Oherp} width='602' height='315' alt='Oherp'/>
-    </div>
-    
-    <div className='ProContent'>
-        <div className='siteContent'>인사관리를 위한 통합 솔루션
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
-                <li>https://github.com/bogusipda</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-</div>
-
-<div className='Project'>
-  <div className='ProjectContent'>
-    <div className='proMiniTitle'>
-      <h3>houudoin</h3>
-        <p>2020년07월 </p>
-    </div>
-    <div className='ProImg'>
-        <img src={houudoin} width='520' height='300' alt='houudoin'/>
-
-    </div>
-
-    
-    <div className='ProContent'>
-        <div className='siteContent'>
-        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
-        </div>
-
-        <hr/>
-
-        <div className='siteSkill'>        
-      <div className='siteSkillHeader'> 
-      <ul>
-        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
-        <li><i class="fas fa-fill-drip"></i> Front-end</li>
-        <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> 도메인</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
-      </ul>
-      </div>
-
-      <div className='siteSkillBody'>
-       <ul>
-                <li>필터 기능 후 제품 제공/구매/포인트 적립</li>
-                <li>JavaScript</li>
-                <li>Eclipse, Java, DBeaver</li>
-                <li>http://www.sysout.co.kr/houudoin/</li>
-                <li>https://github.com/SOL-hub/semi</li>
-              </ul>
-      </div>
-    </div>
-    </div>
-    
-    <br/>
-  </div>
-  <br/><br/><br/>
-</div>
-
-
-
-
-
-
-
+<Project1/>
+<Project2/>
+<Project3/>
+<Project4/>
+<Project5/>
+<Project6/>
 
             <div className='Archiving'>
             <div className='ArcTitle'>Archiving</div>
@@ -695,4 +417,306 @@ function App() {
   );
 }
 
+function Project1(){
+  return (
+    <div className='Project'>
+  <div className='ProjectTitle'>Projects</div>
+    <hr className='ProHr'/><br/><br/>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>보드살롱 보드게임중고거래 사이트</h3>
+        <p>2022년03월(7인 사이드 프로젝트)</p>
+    </div>
+    <div className='ProImg'>
+        <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
+
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        전문적인 보드게임 중고 사이트<br/>
+        구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를
+        할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여
+        초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며
+        개발할 수 있었던 프로젝트입니다.
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+  
+</div>
+  )
+}
+
+function Project2(){
+  return (
+    <div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>Protfolio 웹 사이트</h3>
+        <p>2022년01월(1인 개인프로젝트)</p>
+    </div>
+    <div className='ProImg'>
+        <img src={Protfolio} width='630' height='315' alt='Protfolio'/>
+        
+
+    </div>
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        지금 보시는 웹사이트가 해당 사이트이며 <br/>
+        React에 배웠던 것을 활용하며 
+        레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
+        경험할 수 있던 프로젝트입니다.  
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <br/><br/>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무 경력, 활동사이트등을 간단히 소개</li>
+                <li>React, TypeScript, SASS</li>
+                <li className='git'>https://github.com/SOL-hub/SOL-sProtfolio</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+  )
+}
+
+function Project3(){
+  return (
+    <div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>DGIS</h3>
+        <p>2021년07월 (주)소프트엔 - 프로젝트</p>
+    </div>
+    <div className='ProImg'>
+        <img src={DGIS} width='580' height='315' alt='DGIS'/>
+
+        
+    </div>
+
+    <div className='ProContent'>
+        <div className='siteContent'>
+        
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>JQUERY, HTML, CSS</li>
+                <li>Eclipse, Java, MYSQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+
+  )
+}
+
+function Project4(){
+  return(
+    <div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>사기꾼 잡는 변호사</h3>
+        <p>2021년 06월 (주)소프트엔 - 프로젝트 </p>
+    </div>
+    <div className='ProImg'>
+      <img src={lawyer3} width='602' height='305' alt='lawyer3'/>
+
+    </div>
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플입니다.
+        ERD설계와 클라이언트의 수정사항을 UI기획 기획서를 작업하며 진행했습니다.
+        MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 
+        기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인</li>
+                <li>JQuery, HTML, CSS</li>
+                <li>Eclipse, Java, HeidiSQL</li>
+                <li></li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+  )
+}
+
+function Project5(){
+  return (
+    <div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>Oherp!</h3>
+        <p>2020년08월 </p>
+    </div>
+    <div className='ProImg'>
+        <img src={Oherp} width='602' height='315' alt='Oherp'/>
+    </div>
+    
+    <div className='ProContent'>
+        <div className='siteContent'>인사관리를 위한 통합 솔루션
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://github.com/bogusipda</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+</div>
+  )
+}
+
+function Project6(){
+  return (
+    <div className='Project'>
+  <div className='ProjectContent'>
+    <div className='proMiniTitle'>
+      <h3>houudoin</h3>
+        <p>2020년07월 </p>
+    </div>
+    <div className='ProImg'>
+        <img src={houudoin} width='520' height='300' alt='houudoin'/>
+
+    </div>
+
+    
+    <div className='ProContent'>
+        <div className='siteContent'>
+        일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트
+        </div>
+
+        <hr/>
+
+        <div className='siteSkill'>        
+      <div className='siteSkillHeader'> 
+      <ul>
+        <li><i class="fas fa-fill-drip"></i> 주요기능</li>
+        <li><i class="fas fa-fill-drip"></i> Front-end</li>
+        <li><i class="fas fa-fill-drip"></i> Back-end</li>
+        <li><i class="fas fa-fill-drip"></i> 도메인</li>
+        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+      </ul>
+      </div>
+
+      <div className='siteSkillBody'>
+       <ul>
+                <li>필터 기능 후 제품 제공/구매/포인트 적립</li>
+                <li>JavaScript</li>
+                <li>Eclipse, Java, DBeaver</li>
+                <li>http://www.sysout.co.kr/houudoin/</li>
+                <li>https://github.com/SOL-hub/semi</li>
+              </ul>
+      </div>
+    </div>
+    </div>
+    
+    <br/>
+  </div>
+  <br/><br/><br/>
+</div>
+
+  )
+}
 export default App;
