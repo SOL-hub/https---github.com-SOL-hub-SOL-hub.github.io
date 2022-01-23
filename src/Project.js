@@ -1,3 +1,8 @@
+
+import 보드살롱 from './project-image/보드살롱.png';
+
+export default
+
 [
     {
         Name : '보드살롱 보드게임중고거래 사이트',
@@ -5,7 +10,7 @@
         Image : '보드살롱',
         Content : '전문적인 보드게임 중고 사이트<br/>구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를 할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여 초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며 개발할 수 있었던 프로젝트입니다.', 
         
-        Skill : '필터 기능 후 제품 제공/구매/포인트 적립',
+        Skill : '검색/필터/구매문의',
         FrontEnd : 'React, TypeScript',
         BackEnd : 'SpringBoot, Java, MySQL',
         Domain : '',
@@ -44,7 +49,7 @@
         Image : 'lawyer3',
         Content : '상담을 보다 간편하게 진행 할 수 있는 변호상담 어플입니다.ERD설계와 클라이언트의 수정사항을 UI기획 기획서를 작업하며 진행했습니다.MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.', 
         
-        Skill : '상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인';
+        Skill : '상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인',
         FrontEnd : 'JQuery, HTML, CSS',
         BackEnd : 'Eclipse, Java, HeidiSQL',
         Domain : '',
@@ -57,7 +62,7 @@
         Image : 'Oherp',
         Content : '인사관리를 위한 통합 솔루션', 
         
-        Skill : '필터 기능 후 제품 제공/구매/포인트 적립';
+        Skill : '필터 기능 후 제품 제공/구매/포인트 적립',
         FrontEnd : 'JavaScript',
         BackEnd : 'Eclipse, Java, DBeave',
         Domain : 'http://www.sysout.co.kr/houudoin/',
@@ -70,7 +75,7 @@
         Image : 'houudoin',
         Content : '일반적인 가구 판매를 넘어 우리집의 인테리어 견적을 믿고 맡길 수 있는 토탈 인테리어 솔루션을 제공하는 사이트', 
         
-        Skill : '필터 기능 후 제품 제공/구매/포인트 적립';
+        Skill : '필터 기능 후 제품 제공/구매/포인트 적립',
         FrontEnd : 'JavaScript',
         BackEnd : 'Eclipse, Java, DBeave',
         Domain : 'http://www.sysout.co.kr/houudoin/',

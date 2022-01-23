@@ -1,5 +1,9 @@
+/*eslint-disable*/
 import './App.css';
-import { Link, Router } from 'react-router-dom';
+
+import project from './project.js'
+
+
 import parksol from './parksol.jpg';
 import back1 from './BackEnd/back1.png';
 import back2 from './BackEnd/back2.png';
@@ -12,7 +16,6 @@ import front1 from './FrontEnd/front1.png';
 import front2 from './FrontEnd/front2.png';
 import front3 from './FrontEnd/front3.png';
 import front4 from './FrontEnd/front4.png';
-import front5 from './FrontEnd/front5.png';
 import front6 from './FrontEnd/front6.png';
 import front7 from './FrontEnd/front7.png';
 import front8 from './FrontEnd/front8.png';
@@ -20,7 +23,6 @@ import svn from './Version/svn.png';
 
 import Erdcloud from './Communication/Erdcloud.png';
 
-import notion from './notion.png';
 import tistoryLogo from './tistoryLogo.png';
 import salLong from './salLong.png';
 import notionlogo from './notionlogo.png';
@@ -424,26 +426,17 @@ function Project1(){
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
-      <h3>보드살롱 보드게임중고거래 사이트</h3>
-        <p>2022년03월(7인 사이드 프로젝트)</p>
+      <h3>{project[0].Name}</h3>
+        <p>{project[0].Date}</p>
     </div>
     <div className='ProImg'>
         <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
-
     </div>
 
-    
     <div className='ProContent'>
         <div className='siteContent'>
-        전문적인 보드게임 중고 사이트<br/>
-        구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를
-        할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여
-        초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며
-        개발할 수 있었던 프로젝트입니다.
-        </div>
-
+       {project[0].Content}</div>
         <hr/>
-
         <div className='siteSkill'>        
       <div className='siteSkillHeader'> 
       <ul>
@@ -456,10 +449,10 @@ function Project1(){
 
       <div className='siteSkillBody'>
        <ul>
-                <li>검색/필터/구매문의</li>
-                <li>React, TypeScript</li>
-                <li>SpringBoot, Java, MySQL</li>
-                <li>https://github.com/bogusipda</li>
+                <li>{project[0].Skill}</li>
+                <li>{project[0].FrontEnd}</li>
+                <li>{project[0].BackEnd}</li>
+                <li>{project[0].Github}</li>
               </ul>
       </div>
     </div>
