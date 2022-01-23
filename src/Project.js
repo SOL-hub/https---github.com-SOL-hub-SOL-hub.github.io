@@ -1,6 +1,3 @@
-
-import 보드살롱 from './project-image/보드살롱.png';
-
 export default
 
 [
