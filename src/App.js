@@ -2,7 +2,8 @@
 import './App.css';
 
 import project from './project.js'
-
+import {Link, NavLink, Route, Switch} from 'react-router-dom';
+import axios from 'axios';
 
 import parksol from './parksol.jpg';
 import back1 from './BackEnd/back1.png';
@@ -44,21 +45,28 @@ function App() {
 
   let [AboutSol, AboutSolKind] = useState(['박 솔', '서울시 동작구', '상도역', '노량진역', '봉천역', '94.03.17','010-5267-2407', 'thfdl0317@naver.com']);
 
+  const github=()=>{
+    document.location.href('https://github.com/SOL-hub')
+  }
+
   return (
     <div className="App">
   <div className='NavBackGround'>
     <div className='Protfolio'>SOL's Protfolio</div>
     <ul className='NarBar'>
         <li><a href="#action1">{NarBarTitle[0]}</a></li>
-        <li><a href="#action1">{NarBarTitle[1]}</a></li>
-        <li><a href="#action1">{NarBarTitle[2]}</a></li>
-        <li><a href="#action1">{NarBarTitle[3]}</a></li>
-        <li><a href="#action1">{NarBarTitle[4]}</a></li>
-        <li><a href="#action1">{NarBarTitle[5]}</a></li>
+        <li><NavLink activeStyle={ {fontSize:30}}to="Skill">{NarBarTitle[1]}</NavLink></li>
+        <li><NavLink activeStyle={ {fontSize:30}}to="Project">{NarBarTitle[2]}</NavLink></li>
+        <li><NavLink activeStyle={ {fontSize:30}}to="Archiving">{NarBarTitle[3]}</NavLink></li>
+        <li><NavLink activeStyle={ {fontSize:30}}to="Programming Experience">{NarBarTitle[4]}</NavLink></li>
+        <li><NavLink activeStyle={ {fontSize:30}}to="Before Career">{NarBarTitle[5]}</NavLink></li>
       </ul>
 
 </div>
 
+<Route path='/AboutSol'>
+    <AboutSol></AboutSol>
+</Route>
 <div className='ProTitle'>
   <h3>박 솔</h3>
   <p>웹 개발자 SOL's 포토폴리오</p>
@@ -111,49 +119,159 @@ function App() {
         </div>
     </div>
 </div>
-<Skill/>
 
-<Project1/>
-<Project2/>
-<Project3/>
-<Project4/>
-<Project5/>
-<Project6/>
 
-<Archiving/>
+<Route path="/Skill" component={Skill}>
+  <Skill/>
+</Route>
+<div className='Skills'>
+  <div className='AboutTitle'>Skills</div>
+   <hr className='ProHr'/>
+    <div className='row'>
+        <div className='col-md-3'><p1>Back-end</p1></div>
+        <div className='col-md-3'><p2>Front-end</p2></div>
+        <div className='col-md-3'><p2>Version Control</p2></div>
+        <div className='col-md-3'><p2>Commnuication</p2></div>
+    </div>
 
-<ProgrammingExperience/>
-           
-<BeforeCareer/>
-
-      <div className='Final'>
-          <div className='FinalIcons'>
-
-              <div className='Icons'>
-                <h4><i class="fab fa-github fa-4x"></i><link to='https://github.com/SOL-hub'/></h4>
+    <div className='BackEnd'>
+      <div className='row'>
+              <div className='col-md-2'>
+                  <div className='back1'>Eclipse<br/>
+                    <img src={back1}width='80' height='80' alt='back1'/>
+                  </div>
               </div>
-             
-              <div className='Icons'>
-                <h4><img src={tistoryLogo} width='96' height='96' alt='tistoryLogo'/></h4>
+              <div className='col-md-2'>
+                  <div className='back1'>Spring<br/>
+                    <img src={back2} width='80' height='80' alt='back2'/>
+                </div>
               </div>
-              <div className='Icons'>
-                <h4><i class="fab fa-facebook fa-4x"></i></h4>
+              <div className='col-md-2'>
+                  <div className='back1'>DBeaver<br/>
+                    <img src={back3} width='80' height='80' alt='back3'/>
+                </div>
+              </div>
+              <div className='col-md-2'>
+                  <div className='back1 font'>HeidiSQL<br/>
+                    <img src={back4} width='80' height='80' alt='back4'/>
+                </div>
+              </div>
+              <div className='col-md-2'>
+                  <div className='back1'>GitHub<br/>
+                    <img src={back5} width='80' height='80' alt='back5'/>
+                </div>
+              </div>
+              <div className='col-md-2'>
+                  <div className='back1'>GitHub<br/>
+                    <img src={back6} width='80' height='80' alt='back6'/>
+                </div>
               </div>
 
-             
-          </div>
-          
-          <div className='FinalIcons2'>
-            <h5><i class="far fa-copyright"></i>2022. SOL PARK. All rights reserved. </h5>
-          </div>
-          </div>
-</div>
-  );
-}
+    </div>
+  </div>
+      <div className='SkillPadding'></div>
 
-function Project1(){
-  return (
-    <div className='Project'>
+        <div className='row'>
+            <div className='col-md-3'><p2>Back-end</p2></div>
+            <div className='col-md-3'><p1>Front-end</p1></div>
+            <div className='col-md-3'><p2>Version Control</p2></div>
+            <div className='col-md-3'><p2>Commnuication</p2></div>
+        </div>
+
+        <div className='FrontEnd'>
+        <div className='row'>
+                <div className='front1'>HTML<br/>
+                  <img src={front1}width='80' height='80' alt='front1'/>
+                </div>
+                <div className='front1'>CSS<br/>
+                  <img src={front2} width='80' height='80' alt='front2'/>
+                </div>
+                <div className='front1'>JS ES6<br/>
+                  <img src={front3} width='80' height='80' alt='front3'/>
+                </div>
+                <div className='front1'>TypeScript<br/>
+                  <img src={front4} width='80' height='80' alt='front4'/>
+                </div>
+                <div className='front1'>React<br/>
+                  <i class="fab fa-react fa-3x"></i>
+                </div>
+                <div className='front1'>Redux<br/>
+                  <img src={front6} width='80' height='80' alt='front6'/>
+        </div>
+        
+            <div className='front1'>Sass<br/>
+              <img src={front7} width='80' height='80' alt='front7'/>
+            </div>
+
+            <div className='front1'>JQUERY<br/>
+              <img src={front8} width='80' height='80' alt='front8'/>
+            </div>
+        </div>
+    
+      </div>
+
+  <div className='SkillPadding'></div>
+
+  <div className='row'>
+        <div className='col-md-3'><p2>Back-end</p2></div>
+        <div className='col-md-3'><p2>Front-end</p2></div>
+        <div className='col-md-3'><p1>Version Control</p1></div>
+        <div className='col-md-3'><p2>Commnuication</p2></div>
+    </div>
+
+    <div className='VersionControl'>
+      <div className='row'>
+              <div className='col-md-4'>
+                  <div className='verion1'>GitHub<br/>
+                  <i class="fab fa-github fa-3x"></i>
+                  </div>
+              </div>
+              <div className='col-md-4'>
+                  <div className='verion1'>SVN<br/>
+                    <img src={svn} width='80' height='80' alt='svn'/>
+                </div>
+              </div>
+              <div className='col-md-4'>
+                  <div className='verion1'>Git<br/>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+              </div>
+     </div>
+     </div>
+
+     <div className='SkillPadding'></div>
+
+     <div className='row'>
+        <div className='col-md-3'><p2>Back-end</p2></div>
+        <div className='col-md-3'><p2>Front-end</p2></div>
+        <div className='col-md-3'><p2>Version Control</p2></div>
+        <div className='col-md-3'><p1>Commnuication</p1></div>
+    </div>
+
+    <div className='VersionControl'>
+      <div className='row'>
+              <div className='col-md-4'>
+                  <div className='verion1'>slack<br/>
+                  <i class="fab fa-slack fa-3x"></i>
+                  </div>
+              </div>
+              <div className='col-md-4'>
+                  <div className='verion1'>Erdcloud<br/>
+                    <img src={Erdcloud} width='80' height='80' alt='Erdcloud'/>
+                </div>
+              </div>
+              <div className='col-md-4'>
+                  <div className='verion1'>figma<br/>
+                  <i class="fab fa-figma fa-3x"></i>
+                </div>
+              </div>
+     </div>
+     </div>
+  </div>
+
+
+
+<div className='Project'>
   <div className='ProjectTitle'>Projects</div>
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
@@ -194,12 +312,8 @@ function Project1(){
   </div>
   
 </div>
-  )
-}
 
-function Project2(){
-  return (
-    <div className='Project'>
+<div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>Protfolio 웹 사이트</h3>
@@ -245,13 +359,7 @@ function Project2(){
     <br/>
   </div>
 </div>
-
-  )
-}
-
-function Project3(){
-  return (
-    <div className='Project'>
+<div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>DGIS</h3>
@@ -294,13 +402,7 @@ function Project3(){
     <br/>
   </div>
 </div>
-
-  )
-}
-
-function Project4(){
-  return(
-    <div className='Project'>
+<div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>사기꾼 잡는 변호사</h3>
@@ -345,12 +447,8 @@ function Project4(){
     <br/>
   </div>
 </div>
-  )
-}
 
-function Project5(){
-  return (
-    <div className='Project'>
+<div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>Oherp!</h3>
@@ -390,12 +488,8 @@ function Project5(){
     <br/>
   </div>
 </div>
-  )
-}
 
-function Project6(){
-  return (
-    <div className='Project'>
+<div className='Project'>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>houudoin</h3>
@@ -441,10 +535,166 @@ function Project6(){
   </div>
   <br/><br/><br/>
 </div>
+<Route path="/Archiving">
+<Archiving/>
+</Route>
 
-  )
+<div className='Archiving'>
+    <div className='ArcTitle'>Archiving</div>
+      <hr className='ProHr'/><br/><br/>
+        <div className='ArcContent'>
+          <i class="fab fa-github-square fa-8x"></i>
+          <br/>
+            <a href='https://github.com/SOL-hub'>https://github.com/SOL-hub</a>
+            <hr/>  
+            <h5>소스 코드 저장공간</h5>
+          <ul>
+            <li>혼자서 배운 코딩들 정리용, 연습용 소스 코드</li>
+            <li>현재 진행 중인 개인 코드, <br/>사이드프로젝트 팀과 공유용 소스 코드</li>
+            <li>개발 교육 당시 배운 내용정리 및 소스 코드 </li>
+          </ul>
+          </div>
+        
+
+        <div className='ArcContent'>
+          <img src={notionlogo} width='252' height='128' alt='notionlogo'/>
+          <a href='https://www.notion.so/ko-kr'>https://www.notion.so/ko-kr</a>
+          <hr/>
+          <h5>프로그래밍 언어 공부 정리</h5>
+          <ul>
+            <li>잊지 않고 기억할 공부내용들 상세 정리</li>
+            <li>웹 개발을 시작하며 진행한 프로젝트, <br/>코드 기록</li>
+            <li>프로젝트 팀원과 함께 진행 과정 및 정보 공유</li>
+          </ul>
+        </div>
+
+        <div className='ArcContent'>
+           <img src={salLong} width='290' height='152'alt='salLong'/>
+           <a href='https://blog.naver.com/boardgetddo_team'>https://blog.naver.com/boardgetddo_team</a>
+           <hr/>
+            <h5>'보드살롱' 블로그</h5>
+          <ul>
+            <li>서비스 출시 전 관심 유저를 위한 홍보 활동</li>
+            <li>사이드프로젝트/IT관련 업계 사람 관심유도</li>
+            <li>IT관련 정보, 프로젝트의 진행 상황 공유</li>
+          </ul>
+        </div>
+        <div className='ArcContent'>
+        <img src={tistory} width='280' height='128'alt='tistory'/>
+        <a href='https://blog.naver.com/thfdl0317'> https://blog.naver.com/thfdl0317</a>
+        <hr/>
+            <h5>지식공유, 공부정리 목적의 블로그</h5>
+              <ul>
+                <li>개발 중 겪은 오류, 당신만은..쉽게 풀어라. <br/>오류에 대한 해결방법 정리</li>
+                <li>프로젝트를 하며 배운 코드 기록 및 자료 정리</li>
+                <li>웹 개발을 시작하면서 배운 웹 관련 지식 공유</li>
+              </ul>
+        </div>
+  </div>
+
+<Route path="/ProgrammingExperience">
+  <ProgrammingExperience/>
+</Route>
+
+<div className='Experience'>
+            <div className='ProjectTitle'>Programming Experience</div>
+              <hr className='ProHr'/><br/><br/>
+            <div className='ExperienceContent'>
+                    <div className='ExperienceContent1'>
+                      <h5>프로그래밍 교육</h5>
+                    <h5><i class="fas fa-edit"></i> 교육기관 : KH정보교육원(당산점)</h5>
+                    <h5><i class="fas fa-edit"></i> 교육기간 : 20.04.16~20.09.23</h5>
+                    <h5><i class="fas fa-edit"></i> 교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
+                      <h5><i class="fas fa-edit"></i> 교육내용 </h5>
+                        <p>- ORACLE SQL Programming, DB 기본부터 활용까지</p>
+                        <p>- JAVA/ Servlet / JSP, jdbc/Spring Framework, Mybatis, Ajax</p>
+                        <p>- HTML / CSS / JavaScript/JQuery</p>
+                        <p>- 세미, 파이널팀 프로젝트 MVP패턴으로 진행</p>
+
+                    </div>
+                  
+                    <div className='ExperienceContent2'>
+                    <h5>팀프로젝트 & 개인적 개발공부목록(최신 기록)</h5>
+                    <h5><i class="fas fa-edit"></i> 팀프로젝트 : 사이드프로젝트(보드게임 중고거래 플랫폼)</h5> 
+                                                                <p>- 프론트엔드 REACT + typescript 개발</p>
+                    <h5><i class="fas fa-edit"></i> 개인적으로 공부하고 있는 프로그래밍 언어들</h5>
+                        <p>- Spring Boot (인프런 코딩강의)</p>
+                        <p>- JavaScript 객체지향 & ES6 신문법</p>
+                        <p>- React + typescript + Redux 활용</p>
+                        <p>- 정보처리기사 실기 시험준비 중</p>
+                    </div>
+           
+            </div>
+            
+          </div>
+           
+<Route path="/BeforeCareer">
+  <BeforeCareer/>
+</Route>
+
+<div className='BeforeCareer'>
+    <div className='ProjectTitle'>Before Career</div>
+      <hr className='ProHr'/><br/><br/>
+    <div className='ExperienceContent'>
+            <div className='BeforeCareerContent1'>
+             
+            
+    <h5><i class="fas fa-briefcase fa-2x"></i> 이전 경력</h5> 
+      <h5>
+      ㈜ 소프트엔 - 개발본부 
+      </h5>
+      <p>- 근무기간 : 2020년 11월~2021년 11월</p>
+      <p>- 프로젝트 개발, UI상세설계서 작업, 일본어번역 등</p>
+
+      <h5>인피니트 - 영업부</h5>
+
+      <p>- 근무기간 : 2018년 05월~2019년 10월</p>
+      <p>- 업무내용 : 일본회사와 거래 및 견적상담, 번역, 수주 및 발주관리</p>
+
+       </div>
+
+      <div className='BeforeCareerContent2'>
+             
+            
+    <h5><i class="fas fa-plane fa-2x"></i> 이전 활동</h5> 
+    <h5>일본 유학 교환학생 & 워킹홀리데이 (약 2년)</h5>
+
+      <p>- 한국어 강사(나고야), 리조또 파견사원(오사카 및 아와지시마)</p>
+      <p>- 국제 문화교류센터 통역 및 중,고등학교 한국 소개활동 등<br/>
+      (시코쿠 마쯔야마)</p>
+
+    <h5><i class="fas fa-user-graduate fa-2x"></i> 평택대학교 광고홍보학과 졸업</h5>
+
+      <p>- 재학기간 : 2013년 3월 ~ 2018년 8월</p>
+</div>
+</div>
+</div>
+
+      <div className='Final'>
+          <div className='FinalIcons'>
+
+              <div className='Icons'>
+                <h4><i class="fab fa-github fa-4x"></i></h4>
+              </div>
+              <div className='Icons'>
+                <h4><img src={tistoryLogo} width='96' height='96' alt='tistoryLogo'/></h4>
+              </div>
+              <div className='Icons'>
+                <h4><i class="fab fa-facebook fa-4x"></i></h4>
+              </div>
+
+             
+          </div>
+          
+          <div className='FinalIcons2'>
+            <h5><i class="far fa-copyright"></i>2022. SOL PARK. All rights reserved. </h5>
+          </div>
+          </div>
+</div>
+  );
 }
 
+//다른 컴포넌트
 function Skill(){
   return(
     <div className='Skills'>
