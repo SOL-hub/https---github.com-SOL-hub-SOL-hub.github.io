@@ -10,7 +10,7 @@ import back1 from './BackEnd/back1.png';
 import back2 from './BackEnd/back2.png';
 import back3 from './BackEnd/back3.png';
 import back4 from './BackEnd/back4.png';
-import back5 from './BackEnd/back5.png';
+import back5_1 from './BackEnd/back5_1.png';
 import back6 from './BackEnd/back6.png';
 
 import front1 from './FrontEnd/front1.png';
@@ -157,12 +157,12 @@ function App() {
                 </div>
               </div>
               <div className='col-md-2'>
-                  <div className='back1'>GitHub<br/>
-                    <img src={back5} width='80' height='80' alt='back5'/>
+                  <div className='back1'>Spring boot<br/>
+                    <img src={back5_1} width='80' height='80' alt='back5_1'/>
                 </div>
               </div>
               <div className='col-md-2'>
-                  <div className='back1'>GitHub<br/>
+                  <div className='back1'>MySQL<br/>
                     <img src={back6} width='80' height='80' alt='back6'/>
                 </div>
               </div>

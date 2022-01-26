@@ -5,8 +5,9 @@ export default
         Name : '보드살롱 보드게임중고거래 사이트',
         Date : '2022년03월(7인 사이드 프로젝트)',
         Image : '보드살롱',
-        Content : '전문적인 보드게임 중고 사이트<br/>구매자와 판매자가 최대한의 정보를 수집하고, 검색/필터/구매문의를 할 수 있는 MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여 초기 유저모집, 개발할 때 필요한 유저의 니즈 등 다양한 의견을 나누며 개발할 수 있었던 프로젝트입니다.', 
-        
+        Content : 'MVP 서비스 플랫폼을 만들기 위해 기획자, 디자이너, 마케팅, 개발자들이 모여 초기 유저모집, 니즈 등 다양한 의견을 나누며 개발할 수 있었던 프로젝트입니다.   리액트와 타입스크립트를 사용하여 UI를 구현했고 무엇보다 초기 기획부터 런칭까지의 절차를 밟으며 만들어갔던 프로젝트라 협업할 때의 알아야할 다양한 지식, 정보를 배울 수 있었던 프로젝트였습니다.', 
+                  //'전문적인 보드게임 중고 사이트. 구매자와 판매자가 최대한의 정보를 수집과 검색/필터/구매문의를 할 수 있는
+
         Skill : '검색/필터/구매문의',
         FrontEnd : 'React, TypeScript',
         BackEnd : 'SpringBoot, Java, MySQL',
@@ -18,7 +19,7 @@ export default
         Name : 'Protfolio 웹 사이트',
         Date : '2022년01월(1인 개인프로젝트)',
         Image : 'Protfolio',
-        Content : '지금 보시는 웹사이트가 해당 사이트이며 <br/>React에 배웠던 것을 활용하며 레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히 경험할 수 있던 프로젝트입니다.', 
+        Content : '지금 보시는 웹사이트가 해당 사이트이며 React에 배웠던 것을 활용하며 레이아웃을 작업, TypeScript와 Sass를 사용하면서 하면서 몰랐던 CSS기술을 적용하며 프론트엔드 개발을 더 깊숙히 경험할 수 있던 프로젝트입니다.', 
         
         Skill : '자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무 경력, 활동사이트등을 간단히 소개',
         FrontEnd : 'React, TypeScript, SASS',
@@ -33,11 +34,11 @@ export default
         Image : 'DGIS',
         Content : '배수관, 전주', 
         
-        Skill : '검색/조회/',
+        Skill : '검색/조회',
         FrontEnd : 'JQUERY, HTML, CSS',
         BackEnd : 'Eclipse, Java, MYSQL',
-        Domain : 'http://www.sysout.co.kr/houudoin/',
-        Github : 'https://dgis.dreamline.co.kr/sys/logout.do'
+        Domain : '',
+        Github : ''
     },
 
     {
