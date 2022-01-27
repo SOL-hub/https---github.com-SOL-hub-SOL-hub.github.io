@@ -3,7 +3,6 @@ import './App.css';
 
 import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import {Button} from 'react-bootstrap'
-import axios from 'axios';
 
 
 import parksol from './parksol.jpg';
@@ -38,7 +37,6 @@ import DGIS from './project-image/DGIS.jpg';
 import lawyer3 from './project-image/lawyer3.png';
 import Oherp from './project-image/Oherp.png';
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function App() {
@@ -89,7 +87,7 @@ function App() {
 
 <div className='AboutSol'>
   <div className='AboutTitle' id={NarBarTitle} key={NarBarTitle}>
-            {NarBarTitle[0]}</div>
+  {NarBarTitle[0]} <i class="fab fa-pagelines"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
 
@@ -133,12 +131,8 @@ function App() {
     </div>
 </div>
 
-
-<Route path="/Skill" component={Skill}>
-  <Skill/>
-</Route>
 <div className='Skills' id={NarBarTitle} key={NarBarTitle}>
-  <div className='AboutTitle'>{NarBarTitle[1]}</div>
+  <div className='AboutTitle'>{NarBarTitle[1]} <i class="fab fa-pagelines"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
@@ -285,7 +279,7 @@ function App() {
 
 
 <div className='Project'>
-  <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}>{NarBarTitle[2]}</div>
+  <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}>{NarBarTitle[2]} <i class="fab fa-pagelines"></i></div>
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
@@ -576,7 +570,7 @@ function App() {
 </div>
 
 <div className='Archiving'>
-    <div className='ArcTitle' id={NarBarTitle} key={NarBarTitle}>{NarBarTitle[2]}</div>
+    <div className='ArcTitle' id={NarBarTitle[3]} key={NarBarTitle[3]}>{NarBarTitle[3]} <i class="fab fa-pagelines"></i></div>
       <hr className='ProHr'/><br/><br/>
         <div className='ArcContent'>
           <i class="fab fa-github-square fa-8x"></i>
@@ -629,7 +623,7 @@ function App() {
   </div>
 
 <div className='Experience'>
-            <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[4]}</div>
+            <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[4]} <i class="fab fa-pagelines"></i></div>
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
@@ -661,13 +655,13 @@ function App() {
           </div>
 
 <div className='BeforeCareer'>
-    <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[5]}</div>
+    <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[5]} <i class="fab fa-pagelines"></i></div>
       <hr className='ProHr'/><br/><br/>
     <div className='ExperienceContent'>
             <div className='BeforeCareerContent1'>
              
             
-    <h5><i class="fas fa-briefcase fa-2x"></i> 이전 경력</h5> 
+    <h5>이전 경력<i class="fas fa-briefcase fa-2x"></i></h5> 
       <h5>
       ㈜ 소프트엔 - 개발본부 
       </h5>
@@ -726,7 +720,7 @@ function App() {
 function Skill(){
   return(
     <div className='Skills'>
-  <div className='AboutTitle'>Skills</div>
+  <div className='AboutTitle'>Skills<i class="fas fa-leaf"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
@@ -932,7 +926,7 @@ function Archiving(){
 function ProgrammingExperience(){
   return (
     <div className='Experience'>
-            <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}>Programming Experience</div>
+            <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}><i class="fas fa-leaf"></i>Programming Experience</div>
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
@@ -969,7 +963,7 @@ function BeforeCareer(){
   return (
     
     <div className='BeforeCareer'>
-    <div className='ProjectTitle'>Before Career</div>
+    <div className='ProjectTitle'><i class="fas fa-leaf"></i>Before Career</div>
       <hr className='ProHr'/><br/><br/>
     <div className='ExperienceContent'>
             <div className='BeforeCareerContent1'>
