@@ -2,6 +2,7 @@
 import './App.css';
 
 import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
+import {Button} from 'react-bootstrap'
 import axios from 'axios';
 
 
@@ -49,17 +50,30 @@ function App() {
     <div className="App">
   <div className='NavBackGround'>
     <div className='Protfolio'>SOL's Protfolio</div>
-    <ul className='NarBar'>
-        <li><a href="#action1">{NarBarTitle[0]}</a></li>
-        <li><NavLink activeStyle={ {fontSize:30}}to="Skill">{NarBarTitle[1]}</NavLink></li>
-        <li><NavLink activeStyle={ {fontSize:30}}to="Project">{NarBarTitle[2]}</NavLink></li>
-        <li><NavLink activeStyle={ {fontSize:30}}to="Archiving">{NarBarTitle[3]}</NavLink></li>
-        <li><NavLink activeStyle={ {fontSize:30}}to="Programming Experience">{NarBarTitle[4]}</NavLink></li>
-        <li><NavLink activeStyle={ {fontSize:30}}to="Before Career">{NarBarTitle[5]}</NavLink></li>
-      </ul>
+      <div className='NarBar'>
+          {['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'].map((NarBarTitle) => (
+            <Button
+              mode="main"
+              onClick={() => {
+                window.scrollTo({
+                  top: document.getElementById(NarBarTitle).offsetTop,
+                  behavior: 'smooth',
+                });
+              }}
+            >
+              {NarBarTitle}
+            </Button>
+          ))}
+        </div>
+        {['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'].map((NarBarTitle) => (
+          
+          
+          <div className='list' id={NarBarTitle} key={NarBarTitle}>
+          </div>
 
-</div>
-
+          
+        ))}
+    </div>
 <Route path='/AboutSol'>
     <AboutSol></AboutSol>
 </Route>
@@ -72,7 +86,8 @@ function App() {
 </div>
 
 <div className='AboutSol'>
-  <div className='AboutTitle'>About SOL</div>
+  <div className='AboutTitle' id={NarBarTitle} key={NarBarTitle}>
+            {NarBarTitle[0]}</div>
    <hr className='ProHr'/>
     <div className='row'>
 
@@ -120,8 +135,8 @@ function App() {
 <Route path="/Skill" component={Skill}>
   <Skill/>
 </Route>
-<div className='Skills'>
-  <div className='AboutTitle'>Skills</div>
+<div className='Skills' id={NarBarTitle} key={NarBarTitle}>
+  <div className='AboutTitle'>{NarBarTitle[1]}</div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
@@ -268,7 +283,7 @@ function App() {
 
 
 <div className='Project'>
-  <div className='ProjectTitle'>Projects</div>
+  <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}>{NarBarTitle[2]}</div>
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
@@ -557,12 +572,9 @@ function App() {
   </div>
   <br/><br/><br/>
 </div>
-<Route path="/Archiving">
-<Archiving/>
-</Route>
 
 <div className='Archiving'>
-    <div className='ArcTitle'>Archiving</div>
+    <div className='ArcTitle' id={NarBarTitle} key={NarBarTitle}>{NarBarTitle[2]}</div>
       <hr className='ProHr'/><br/><br/>
         <div className='ArcContent'>
           <i class="fab fa-github-square fa-8x"></i>
@@ -614,12 +626,8 @@ function App() {
         </div>
   </div>
 
-<Route path="/ProgrammingExperience">
-  <ProgrammingExperience/>
-</Route>
-
 <div className='Experience'>
-            <div className='ProjectTitle'>Programming Experience</div>
+            <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[4]}</div>
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
@@ -649,13 +657,9 @@ function App() {
             </div>
             
           </div>
-           
-<Route path="/BeforeCareer">
-  <BeforeCareer/>
-</Route>
 
 <div className='BeforeCareer'>
-    <div className='ProjectTitle'>Before Career</div>
+    <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[5]}</div>
       <hr className='ProHr'/><br/><br/>
     <div className='ExperienceContent'>
             <div className='BeforeCareerContent1'>
@@ -926,7 +930,7 @@ function Archiving(){
 function ProgrammingExperience(){
   return (
     <div className='Experience'>
-            <div className='ProjectTitle'>Programming Experience</div>
+            <div className='ProjectTitle' id={NarBarTitle} key={NarBarTitle}>Programming Experience</div>
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
