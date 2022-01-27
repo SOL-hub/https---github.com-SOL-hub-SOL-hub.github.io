@@ -1,7 +1,6 @@
 /*eslint-disable*/
 import './App.css';
 
-import project from './project.js'
 import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
 
@@ -296,16 +295,18 @@ function App() {
         <li><i class="fas fa-fill-drip"></i> 주요기능</li>
         <li><i class="fas fa-fill-drip"></i> Front-end</li>
         <li><i class="fas fa-fill-drip"></i> Back-end</li>
-        <li><i class="fas fa-fill-drip"></i> Git-hub</li>
+        <li><i class="fas fa-fill-drip"></i> 블로그</li>
+        <li><i class="fas fa-fill-drip"></i> 사이트</li>
       </ul>
       </div>
 
       <div className='siteSkillBody'>
        <ul>
-                <li>{project[0].Skill}</li>
-                <li>{project[0].FrontEnd}</li>
-                <li>{project[0].BackEnd}</li>
-                <li>{project[0].Github}</li>
+                <li>검색/필터/구매문의</li>
+                <li>React, TypeScript</li>
+                <li>SpringBoot, Java, MySQL</li>
+                <li>https://blog.naver.com/boardgetddo_team/</li>
+                <li>https://blog.naver.com/boardgetddo_team/</li>
               </ul>
       </div>
     </div>
