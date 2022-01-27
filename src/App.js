@@ -38,6 +38,7 @@ import DGIS from './project-image/DGIS.jpg';
 import lawyer3 from './project-image/lawyer3.png';
 import Oherp from './project-image/Oherp.png';
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function App() {
@@ -49,10 +50,14 @@ function App() {
   return (
     <div className="App">
   <div className='NavBackGround'>
-    <div className='Protfolio'>SOL's Protfolio</div>
+    <div className='Protfolio' onClick={()=>{window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth',
+                });
+              }}>SOL's Protfolio</div>
       <div className='NarBar'>
           {['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'].map((NarBarTitle) => (
-            <Button
+            <div
               mode="main"
               onClick={() => {
                 window.scrollTo({
@@ -62,7 +67,7 @@ function App() {
               }}
             >
               {NarBarTitle}
-            </Button>
+            </div>
           ))}
         </div>
         {['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'].map((NarBarTitle) => (
@@ -74,15 +79,12 @@ function App() {
           
         ))}
     </div>
-<Route path='/AboutSol'>
-    <AboutSol></AboutSol>
-</Route>
 <div className='ProTitle'>
   <h3>박 솔</h3>
   <p>웹 개발자 SOL's 포토폴리오</p>
   <hr className='ProHr'/>
   <p className='HrContent'>안녕하십니까<br/>프론트단공부가 취미인 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
-  <button className='ProBtn'>자세히 알아보기 <br/></button>
+  <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/></button>
 </div>
 
 <div className='AboutSol'>
@@ -672,7 +674,7 @@ function App() {
       <p>- 근무기간 : 2020년 11월~2021년 11월</p>
       <p>- 프로젝트 개발, UI상세설계서 작업, 일본어번역 등</p>
 
-      <h5>인피니트 - 영업부</h5>
+      <h5>인피니티 - 영업부</h5>
 
       <p>- 근무기간 : 2018년 05월~2019년 10월</p>
       <p>- 업무내용 : 일본회사와 거래 및 견적상담, 번역, 수주 및 발주관리</p>
@@ -988,7 +990,6 @@ function BeforeCareer(){
        </div>
 
       <div className='BeforeCareerContent2'>
-             
             
     <h5><i class="fas fa-plane fa-2x"></i> 이전 활동</h5> 
     <h5>일본 유학 교환학생 & 워킹홀리데이 (약 2년)</h5>
