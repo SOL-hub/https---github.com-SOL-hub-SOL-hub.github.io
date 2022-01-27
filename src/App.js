@@ -5,7 +5,7 @@ import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import {Button} from 'react-bootstrap'
 
 
-import parksol from './parksol.jpg';
+import parksol from './parksol.png';
 import back1 from './BackEnd/back1.png';
 import back2 from './BackEnd/back2.png';
 import back3 from './BackEnd/back3.png';
