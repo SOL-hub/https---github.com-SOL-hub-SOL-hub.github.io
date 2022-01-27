@@ -642,7 +642,9 @@ li .git{
   font-weight: bold;
   padding: 5px;
 }
-
+.ArcTitle i{
+  color: white;
+}
 .BeforeCareerContent1 p, .BeforeCareerContent2 p{
   text-align: left;
   font-size: 18px;
