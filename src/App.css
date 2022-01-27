@@ -167,6 +167,41 @@ div.NarBar{
   font-weight: bold;
 }
 
+/*애니메이션 나뭇잎 움직이기*/
+/*about Sol, skill 완료*/
+.AboutTitle i{
+  animation-name: down;
+  animation-duration: 1s;
+  color: #00A086;
+}
+
+.AboutTitle i:hover{
+  animation-name: shake;
+  animation-duration: 0.8s;
+}
+
+@keyframes down {
+  0% {transform : rotate(0deg)}
+  25% {transform: rotate(-8deg)}
+  50%{transform: rotate(8deg)}
+  75% {transform: rotate(-8deg)}
+  100%{ transform: rotate(0deg);}
+}
+
+/*about Sol, skill 완료*/
+.ProjectTitle i:hover{
+  animation-name: down2;
+  animation-duration: 1s;
+}
+
+@keyframes down2 {
+  0% {transform : rotate(0deg)}
+  25% {transform: rotate(-8deg)}
+  50%{transform: rotate(8deg)}
+  75% {transform: rotate(-8deg)}
+  100%{ transform: rotate(0deg);}
+}
+
 .AboutSol .ProHr{
   color : #00A086;
   height: 5px;
@@ -263,6 +298,10 @@ div.NarBar{
   padding: 50px 0px 0px 10px;
   font-size: 42px;
   font-weight: bold;
+}
+
+.ProjectTitle i{
+  color: #00A086;
 }
 
 .ProjectContent{
@@ -477,6 +516,25 @@ li .git{
     color:white;
   }
 
+  .ArcTitle i{
+    color: #00A086;
+  }
+
+  .ArcTitle i:hover{
+    animation-name: shake;
+    animation-duration: 1s;
+  }
+  
+  @keyframes shake {
+    0% {transform : rotate(0deg)}
+    25% {transform: rotate(-8deg)}
+    50%{transform: rotate(8deg)}
+    75% {transform: rotate(-8deg)}
+    100%{ transform: rotate(0deg);}
+  }
+
+  
+
 .ArcContent{
   width: 20%;
   max-width: 1000px;
@@ -642,9 +700,7 @@ li .git{
   font-weight: bold;
   padding: 5px;
 }
-.ArcTitle i{
-  color: white;
-}
+
 .BeforeCareerContent1 p, .BeforeCareerContent2 p{
   text-align: left;
   font-size: 18px;

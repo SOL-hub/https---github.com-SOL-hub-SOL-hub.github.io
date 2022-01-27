@@ -132,7 +132,7 @@ function App() {
 </div>
 
 <div className='Skills' id={NarBarTitle} key={NarBarTitle}>
-  <div className='AboutTitle'>{NarBarTitle[1]} <i class="fab fa-pagelines"></i></div>
+  <div className='AboutTitle'>{NarBarTitle[1]}<i class="fab fa-pagelines"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
@@ -720,7 +720,7 @@ function App() {
 function Skill(){
   return(
     <div className='Skills'>
-  <div className='AboutTitle'>Skills<i class="fas fa-leaf"></i></div>
+  <div className='AboutTitle'>Skills <i class="fas fa-leaf"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
