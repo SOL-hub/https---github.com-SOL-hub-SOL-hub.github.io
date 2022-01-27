@@ -31,28 +31,28 @@ margin: 400px;
 
 }
 
-.NarBar{
-  margin-left: 800px;
-}
 
 .NarPro{
   padding: 10px 20px;
   font-weight: bold;
 }
 
-.NarBar Button{
+.NarBar{
   color : #302C2C;
-  display: inline-block;
+  display: flex;
   background-color: #F8F9FA;
   border: none;
   font-size: 24px;
   font-weight: bold;
-  padding: 8px 24px;
+  
 }
 
-.NarBar Button:checked{
-  background-color:#F8F9FA;
-  color: #00A086;
+.NarBar div{
+  padding: 9px 30px;
+}
+
+div.NarBar{
+  float: right;
 }
 
 /*.NarBar li{
