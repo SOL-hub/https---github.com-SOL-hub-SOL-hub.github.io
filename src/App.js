@@ -132,7 +132,7 @@ function App() {
 </div>
 
 <div className='Skills' id={NarBarTitle} key={NarBarTitle}>
-  <div className='AboutTitle'>{NarBarTitle[1]}<i class="fab fa-pagelines"></i></div>
+  <div className='AboutTitle'>{NarBarTitle[1]} <i class="fab fa-pagelines"></i></div>
    <hr className='ProHr'/>
     <div className='row'>
         <div className='col-md-3'><p1>Back-end</p1></div>
@@ -661,7 +661,7 @@ function App() {
             <div className='BeforeCareerContent1'>
              
             
-    <h5>이전 경력<i class="fas fa-briefcase fa-2x"></i></h5> 
+    <h5>이전 경력 <i class="fas fa-briefcase fa-2x"></i></h5> 
       <h5>
       ㈜ 소프트엔 - 개발본부 
       </h5>
