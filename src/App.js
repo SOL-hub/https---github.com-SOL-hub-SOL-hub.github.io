@@ -81,7 +81,7 @@ function App() {
   <h3>박 솔</h3>
   <p>웹 개발자 SOL's 포토폴리오</p>
   <hr className='ProHr'/>
-  <p className='HrContent'>안녕하십니까<br/>프론트단공부가 취미인 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
+  <p className='HrContent'>안녕하십니까<br/>풀스택 개발에 야망을 갖고 있는 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
   <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/></button>
 </div>
 
