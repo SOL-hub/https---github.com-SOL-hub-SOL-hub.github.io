@@ -2,8 +2,9 @@
 import './App.css';
 
 import project from './project.js'
-import {Link, NavLink, Route, Switch} from 'react-router-dom';
+import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
+
 
 import parksol from './parksol.jpg';
 import back1 from './BackEnd/back1.png';
@@ -44,10 +45,6 @@ function App() {
   let [NarBarTitle, NarBarTitleChange] = useState(['About Sol', 'Skills', 'Projects', 'Archiving', 'Programming Experience', 'Before Career'])
 
   let [AboutSol, AboutSolKind] = useState(['박 솔', '서울시 동작구', '상도역', '노량진역', '봉천역', '94.03.17','010-5267-2407', 'thfdl0317@naver.com']);
-
-  const github=()=>{
-    document.location.href('https://github.com/SOL-hub')
-  }
 
   return (
     <div className="App">
@@ -276,8 +273,8 @@ function App() {
     <hr className='ProHr'/><br/><br/>
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
-      <h3>{project[0].Name}</h3>
-        <p>{project[0].Date}</p>
+      <h3>보드살롱 보드게임중고거래 사이트</h3>
+        <p>2022년03월(7인 사이드 프로젝트)</p>
     </div>
     <div className='ProImg'>
         <img src={보드살롱} width='630' height='310' alt='보드살롱'/>
@@ -285,7 +282,13 @@ function App() {
 
     <div className='ProContent'>
         <div className='siteContent'>
-       {project[0].Content}</div>
+        현업에 종사하는 기획자, 디자이너, 마케팅, <br/>
+        개발자들이 모여 진행하고 있는 MVP 서비스 중고거래 플랫폼을 개발 중입니다.<br/>
+        <br/>
+        React와 Typescript를 사용하여 UI를 구현, <br/>
+        팀 블로그 형태로 운영 중이며, 초기 기획부터 런칭까지의 절차를 밟으며 협업할 때의 알아야할 다양한 지식, 정보를 배울 수 있었던 프로젝트였습니다.
+      
+       </div>
         <hr/>
         <div className='siteSkill'>        
       <div className='siteSkillHeader'> 
@@ -330,7 +333,7 @@ function App() {
         지금 보시는 웹사이트가 해당 사이트이며 <br/>
         React에 배웠던 것을 활용하며 
         레이아웃을 작업, TypeScript와 Sass를 사용하면서 프론트엔드 개발을 더 깊숙히
-        경험할 수 있던 프로젝트입니다.  
+        경험할 수 있던 프로젝트입니다.
         </div>
 
         <hr/>
@@ -373,7 +376,14 @@ function App() {
 
     <div className='ProContent'>
         <div className='siteContent'>
+        통신서비스를 설치한 곳의 시설현황, 가공거리, 간성망 등을 검색, 조회하는 웹 사이트입니다. <br/>
+        <br/>각 목차별 UI들의 레이아웃을 제이쿼리와 CSS로 구현하며 웹 서비스에 주요 기능들을 나타낼 때 직관적인 사용을 할 수 있도록 구성할 수 있는 기본적인 문법들을 배울 수 있었습니다. <br/>
         
+        <br/>
+        각 UI마다의 기능들을 모듈화하는 방식, mybatis의 sql을 가져와 수정, 조회하며 MVC패턴의 흐름을 실무에서 깊이 파악할 수 있었고 
+        
+        <br/>
+        ajax인 비동기적 통신방식으로 새로 로딩없이 원하는 데이터만 보여줄 수 있게 구현하는 방법을 자세히 배울 수 있었던 경험이었습니다.
         </div>
 
         <hr/>
@@ -415,10 +425,13 @@ function App() {
     
     <div className='ProContent'>
         <div className='siteContent'>
-        상담을 보다 간편하게 진행 할 수 있는 변호상담 어플입니다.
-        ERD설계와 클라이언트의 수정사항을 UI기획 기획서를 작업하며 진행했습니다.
-        MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 
-        기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.
+        상담을 웹, 앱으로 간편하게 진행 할 수 있는 변호사 상담 사이트입니다. <br/>
+        ERD설계와 클라이언트의 수정사항을 직접 UI기획 기획서를 작업하며 진행하며 유저들에게 보다 편리한 기능을 제공하는 것이 우선으로 진행하며, 
+        <br/>
+        <br/>UI의 화면에 기능들이 잘 배치되어질 수 있도록하기 위해 논의하며 사이트를 만들 때
+        중요한 순위와 코드 작성 시 <br/>기획과 기능구현 전 유스케이스의 중요성을 인식하며 개발할 때 불필요 데이터들을 줄일 수 있었으며 
+        <br/><br/>
+        MVP패턴으로 개발하며 상담신청부터 상담조회까지 CRUD 기능을 구현, 기존에 알던 방식과는 다른 JQuery 방식을 사용하며 지식범위를 넓힐 수 있었던 프로젝트였습니다.
         </div>
 
         <hr/>
@@ -438,7 +451,8 @@ function App() {
                 <li>상담예약, 관리자 승인/거절 선택에 따라 상담진행/상담내역확인</li>
                 <li>JQuery, HTML, CSS</li>
                 <li>Eclipse, Java, HeidiSQL</li>
-                <li></li>
+                <li><Link to="https://devlop.senkorea.com:61238/intrcn/intrcnView.do">김기용 변호사</Link></li>
+                <li><Route path="https://devlop.senkorea.com:61238/intrcn/intrcnView.do">김기용 변호사</Route></li>
               </ul>
       </div>
     </div>
@@ -452,14 +466,20 @@ function App() {
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>Oherp!</h3>
-        <p>2020년08월 </p>
+        <p>2020년08월(5인 개인프로젝트) </p>
     </div>
     <div className='ProImg'>
         <img src={Oherp} width='602' height='315' alt='Oherp'/>
     </div>
     
     <div className='ProContent'>
-        <div className='siteContent'>인사관리를 위한 통합 솔루션
+        <div className='siteContent'>
+        인사관리를 위한 통합 솔루션을 주제로, 사원들의 근태관리, 출퇴근, 휴가, 급여 등의 관리와 커뮤니티, 기록형 웹 사이트를 만들었습니다. 
+        <br/>
+        <br/>
+        spring에 필요한 설정파일, 라이브러리 등록하는 것에 시간이 많이 소요되었지만 프레임워크의 사용방법과 이클립스와 다른 DB연결 방법 등으로 spring의 장점을 알아갈 수 있었으며,
+        <br/>
+        실제 웹 화면과 유사한 기능을 제이쿼리로 구현하려면 어떻게 해야하는지에 대해 검색하며 익숙해지며 페이지 상황에 맞는 SQL를 구상하며 진행한 프로젝트였습니다.
         </div>
 
         <hr/>
@@ -480,6 +500,7 @@ function App() {
                 <li>React, TypeScript</li>
                 <li>SpringBoot, Java, MySQL</li>
                 <li>https://github.com/bogusipda</li>
+                
               </ul>
       </div>
     </div>
@@ -493,7 +514,7 @@ function App() {
   <div className='ProjectContent'>
     <div className='proMiniTitle'>
       <h3>houudoin</h3>
-        <p>2020년07월 </p>
+        <p>2020년07월 (6인 개인프로젝트)</p>
     </div>
     <div className='ProImg'>
         <img src={houudoin} width='520' height='300' alt='houudoin'/>
@@ -549,9 +570,9 @@ function App() {
             <hr/>  
             <h5>소스 코드 저장공간</h5>
           <ul>
-            <li>혼자서 배운 코딩들 정리용, 연습용 소스 코드</li>
-            <li>현재 진행 중인 개인 코드, <br/>사이드프로젝트 팀과 공유용 소스 코드</li>
-            <li>개발 교육 당시 배운 내용정리 및 소스 코드 </li>
+            <li><i class="fas fa-check"></i> 혼자 배운 코딩들 정리용, 연습용 소스 코드</li>
+            <li><i class="fas fa-check"></i> 프로젝트 팀과 공유용 소스 코드 </li>
+            <li><i class="fas fa-check"></i> 개발 교육 당시 배운 내용정리</li>
           </ul>
           </div>
         
@@ -562,21 +583,21 @@ function App() {
           <hr/>
           <h5>프로그래밍 언어 공부 정리</h5>
           <ul>
-            <li>잊지 않고 기억할 공부내용들 상세 정리</li>
-            <li>웹 개발을 시작하며 진행한 프로젝트, <br/>코드 기록</li>
-            <li>프로젝트 팀원과 함께 진행 과정 및 정보 공유</li>
+            <li><i class="fas fa-check"></i> 공부내용들 상세 정리(복습용)</li>
+            <li><i class="fas fa-check"></i> 개발을 시작하며 진행한 프로젝트 코드 기록</li>
+            <li><i class="fas fa-check"></i> 프로젝트 팀원과 진행한 회의 및 정보 공유</li>
           </ul>
         </div>
 
         <div className='ArcContent'>
-           <img src={salLong} width='290' height='152'alt='salLong'/>
+           <img src={salLong} width='290' height='128'alt='salLong'/>
            <a href='https://blog.naver.com/boardgetddo_team'>https://blog.naver.com/boardgetddo_team</a>
            <hr/>
             <h5>'보드살롱' 블로그</h5>
           <ul>
-            <li>서비스 출시 전 관심 유저를 위한 홍보 활동</li>
-            <li>사이드프로젝트/IT관련 업계 사람 관심유도</li>
-            <li>IT관련 정보, 프로젝트의 진행 상황 공유</li>
+            <li><i class="fas fa-check"></i> 서비스 출시 전 관심 유저를 위한 홍보 활동</li>
+            <li><i class="fas fa-check"></i> 사이드프로젝트/IT관련 업계 사람 관심유도</li>
+            <li><i class="fas fa-check"></i> IT관련 정보, 프로젝트의 진행 상황 공유</li>
           </ul>
         </div>
         <div className='ArcContent'>
@@ -585,9 +606,9 @@ function App() {
         <hr/>
             <h5>지식공유, 공부정리 목적의 블로그</h5>
               <ul>
-                <li>개발 중 겪은 오류, 당신만은..쉽게 풀어라. <br/>오류에 대한 해결방법 정리</li>
-                <li>프로젝트를 하며 배운 코드 기록 및 자료 정리</li>
-                <li>웹 개발을 시작하면서 배운 웹 관련 지식 공유</li>
+                <li><i class="fas fa-check"></i> 개발 중 겪는 오류에 대한 해결방법 정리</li>
+                <li><i class="fas fa-check"></i> 프로젝트를 하며 배운 코드 자료 정리</li>
+                <li><i class="fas fa-check"></i> 개발을 시작하면서 배운 웹 관련 지식 공유</li>
               </ul>
         </div>
   </div>
@@ -601,7 +622,7 @@ function App() {
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
-                      <h5>프로그래밍 교육</h5>
+                      <h4>프로그래밍 교육</h4>
                     <h5><i class="fas fa-edit"></i> 교육기관 : KH정보교육원(당산점)</h5>
                     <h5><i class="fas fa-edit"></i> 교육기간 : 20.04.16~20.09.23</h5>
                     <h5><i class="fas fa-edit"></i> 교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
@@ -614,7 +635,7 @@ function App() {
                     </div>
                   
                     <div className='ExperienceContent2'>
-                    <h5>팀프로젝트 & 개인적 개발공부목록(최신 기록)</h5>
+                    <h4>팀프로젝트 & 개인적 개발공부목록(최신 기록)</h4>
                     <h5><i class="fas fa-edit"></i> 팀프로젝트 : 사이드프로젝트(보드게임 중고거래 플랫폼)</h5> 
                                                                 <p>- 프론트엔드 REACT + typescript 개발</p>
                     <h5><i class="fas fa-edit"></i> 개인적으로 공부하고 있는 프로그래밍 언어들</h5>
@@ -856,9 +877,9 @@ function Archiving(){
             <hr/>  
             <h5>소스 코드 저장공간</h5>
           <ul>
-            <li>혼자서 배운 코딩들 정리용, 연습용 소스 코드</li>
-            <li>현재 진행 중인 개인 코드, <br/>사이드프로젝트 팀과 공유용 소스 코드</li>
-            <li>개발 교육 당시 배운 내용정리 및 소스 코드 </li>
+            <li><i class="fas fa-check"></i> 혼자 배운 코딩들 정리, 기록용 소스 코드</li>
+            <li><i class="fas fa-check"></i> 프로젝트 팀과 공유용 소스 코드</li>
+            <li><i class="fas fa-check"></i> 개발 교육 당시 배운 내용정리 및 소스 코드 </li>
           </ul>
           </div>
         
@@ -869,9 +890,9 @@ function Archiving(){
           <hr/>
           <h5>프로그래밍 언어 공부 정리</h5>
           <ul>
-            <li>잊지 않고 기억할 공부내용들 상세 정리</li>
-            <li>웹 개발을 시작하며 진행한 프로젝트, <br/>코드 기록</li>
-            <li>프로젝트 팀원과 함께 진행 과정 및 정보 공유</li>
+            <li><i class="fas fa-check"></i> 잊지 않고 기억할 공부내용 상세 정리</li>
+            <li><i class="fas fa-check"></i> 웹 개발을 시작하며 진행한 프로젝트, <br/>코드 기록</li>
+            <li><i class="fas fa-check"></i> 프로젝트 팀원과 함께 진행하는과정 및 정보 공유</li>
           </ul>
         </div>
 
@@ -881,9 +902,9 @@ function Archiving(){
            <hr/>
             <h5>'보드살롱' 블로그</h5>
           <ul>
-            <li>서비스 출시 전 관심 유저를 위한 홍보 활동</li>
-            <li>사이드프로젝트/IT관련 업계 사람 관심유도</li>
-            <li>IT관련 정보, 프로젝트의 진행 상황 공유</li>
+            <li><i class="fas fa-check"></i> 서비스 출시 전 관심 유저를 위한 홍보 활동</li>
+            <li><i class="fas fa-check"></i> 사이드프로젝트/IT관련 업계 사람 관심유도</li>
+            <li><i class="fas fa-check"></i> IT관련 정보, 프로젝트의 진행 상황 공유</li>
           </ul>
         </div>
         <div className='ArcContent'>
@@ -892,9 +913,9 @@ function Archiving(){
         <hr/>
             <h5>지식공유, 공부정리 목적의 블로그</h5>
               <ul>
-                <li>개발 중 겪은 오류, 당신만은..쉽게 풀어라. <br/>오류에 대한 해결방법 정리</li>
-                <li>프로젝트를 하며 배운 코드 기록 및 자료 정리</li>
-                <li>웹 개발을 시작하면서 배운 웹 관련 지식 공유</li>
+                <li><i class="fas fa-check"></i> 개발 중 겪은 오류, 당신만은..쉽게 풀어라. <br/>오류에 대한 해결방법 정리</li>
+                <li><i class="fas fa-check"></i> 프로젝트를 하며 배운 코드 기록 및 자료 정리</li>
+                <li><i class="fas fa-check"></i> 웹 개발을 시작하면서 배운 웹 관련 지식 공유</li>
               </ul>
         </div>
   </div>
@@ -908,7 +929,7 @@ function ProgrammingExperience(){
               <hr className='ProHr'/><br/><br/>
             <div className='ExperienceContent'>
                     <div className='ExperienceContent1'>
-                      <h5>프로그래밍 교육</h5>
+                      <h4>프로그래밍 교육</h4>
                     <h5><i class="fas fa-edit"></i> 교육기관 : KH정보교육원(당산점)</h5>
                     <h5><i class="fas fa-edit"></i> 교육기간 : 20.04.16~20.09.23</h5>
                     <h5><i class="fas fa-edit"></i> 교육과목 : 디바이스&웹 콘텐츠 융합 디지털 컨버전스 양성과정(2)</h5>
@@ -921,9 +942,9 @@ function ProgrammingExperience(){
                     </div>
                   
                     <div className='ExperienceContent2'>
-                    <h5>팀프로젝트 & 개인적 개발공부목록(최신 기록)</h5>
+                    <h5>팀프로젝트 & 개인 개발공부목록(최신기록)</h5>
                     <h5><i class="fas fa-edit"></i> 팀프로젝트 : 사이드프로젝트(보드게임 중고거래 플랫폼)</h5> 
-                                                                <p>- 프론트엔드 REACT + typescript 개발</p>
+                                                                <p>- 프론트엔드 R + typescript 개발</p>
                     <h5><i class="fas fa-edit"></i> 개인적으로 공부하고 있는 프로그래밍 언어들</h5>
                         <p>- Spring Boot (인프런 코딩강의)</p>
                         <p>- JavaScript 객체지향 & ES6 신문법</p>
