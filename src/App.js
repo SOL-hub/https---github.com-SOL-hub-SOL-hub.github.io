@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import './App.css';
+/*import './test.scss';*/
 
 import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import {Button} from 'react-bootstrap'
