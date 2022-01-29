@@ -666,7 +666,7 @@ function App() {
                 <h5>
                 ㈜ 소프트엔 - 개발본부 
                 </h5>
-                <p>- 근무기간 : 2020년 11월~2021년 11월</p>
+                <p>- 근무기간 : 2020년 11월~2021년 12월</p>
                 <p>- 프로젝트 개발, UI상세설계서 작업, 일본어번역 등</p>
 
                 <h5>인피니티 - 영업부</h5>
@@ -696,13 +696,25 @@ function App() {
           <div className='Final'>
               <div className='FinalIcons'>
                   <div className='Icons'>
-                    <h4><i class="fab fa-github fa-4x"></i></h4>
+                    <h4 onClick={()=>{
+                    }}><a href='https://github.com/SOL-hub' target="_blank" rel="github">
+                      <i class="fab fa-github fa-4x"></i>
+                      </a>
+                    </h4>
                   </div>
                   <div className='Icons'>
-                    <h4><img src={tistoryLogo} width='96' height='96' alt='tistoryLogo'/></h4>
+                    <h4>
+                    <a href='https://thfdl0317.tistory.com/' target="_blank" rel="github">
+                      <img src={tistoryLogo} width='96' height='96' alt='tistoryLogo'/>
+                    </a>
+                    </h4>
                   </div>
                   <div className='Icons'>
-                    <h4><i class="fab fa-facebook fa-4x"></i></h4>
+                    <h4>
+                    <a href='https://www.facebook.com/profile.php?id=100003807183258' target="_blank" rel="github">
+                      <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    </h4>
                   </div>
               </div>
               <div className='FinalIcons2'>
