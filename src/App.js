@@ -60,8 +60,7 @@ function App() {
               mode="main"
               onClick={() => {
                 window.scrollTo({
-                  top: document.getElementById(NarBarTitle).offsetTop,
-                  behavior: 'smooth',
+                  top: document.getElementById(NarBarTitle).offsetTop, behavior: 'smooth',
                 });
               }}
             >
@@ -73,6 +72,9 @@ function App() {
           
           
           <div className='list' id={NarBarTitle} key={NarBarTitle}>
+
+              {NarBarTitle}
+
           </div>
 
           
@@ -390,7 +392,7 @@ function App() {
 
             <div className='ProContent'>
                 <div className='siteContent'>
-                통신서비스를 설치한 곳의 시설현황, 가공거리, 간성망 등을 검색, 조회하는 웹 사이트입니다. <br/>
+                통신서비스를 설치한 곳의 시설현황, 가공거리, 간선망 등을 검색, 조회하는 웹 사이트입니다. <br/>
                 <br/>각 목차별 UI들의 레이아웃을 제이쿼리와 CSS로 구현하며 웹 서비스에 주요 기능들을 나타낼 때 직관적인 사용을 할 수 있도록 구성할 수 있는 기본적인 문법들을 배울 수 있었습니다. <br/>
                 
                 <br/>
@@ -434,6 +436,10 @@ function App() {
             </div>
             <div className='ProImg'>
               <img src={lawyer3} width='602' height='305' alt='lawyer3'/>
+
+
+
+              
 
             </div>
             
@@ -646,9 +652,9 @@ function App() {
                               <h5><i class="fas fa-edit"></i> 팀프로젝트 : 사이드프로젝트(보드게임 중고거래 플랫폼)</h5> 
                                                                           <p>- 프론트엔드 REACT + typescript 개발</p>
                               <h5><i class="fas fa-edit"></i> 개인적으로 공부하고 있는 프로그래밍 언어들</h5>
-                                  <p>- Spring Boot (인프런 코딩강의)</p>
+                                  <p>- Spring Boot, JPA, JWT</p>
                                   <p>- JavaScript 객체지향 & ES6 신문법</p>
-                                  <p>- React + typescript + Redux 활용</p>
+                                  <p>- React + typescript 활용</p>
                                   <p>- 정보처리기사 실기 시험준비 중</p>
                               </div>
                     
@@ -667,7 +673,7 @@ function App() {
                 <h5>
                 ㈜ 소프트엔 - 개발본부 
                 </h5>
-                <p>- 근무기간 : 2020년 11월~2021년 12월</p>
+                <p>- 근무기간 : 2020년 11월~2021년 11월</p>
                 <p>- 프로젝트 개발, UI상세설계서 작업, 일본어번역 등</p>
 
                 <h5>인피니티 - 영업부</h5>
