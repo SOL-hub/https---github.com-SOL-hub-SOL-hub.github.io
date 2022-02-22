@@ -65,7 +65,7 @@ function App() {
   
   function titleName(){
     var newName = [...AboutSolTitle];
-    newName[0] = '성명 :';
+    newName[0] = '성명';
     AboutSolTitleChange(newName);
   }
 
@@ -134,7 +134,8 @@ function App() {
         <ParkSol>박 솔</ParkSol>
         <p>웹 개발자 SOL's 포토폴리오</p>
         <hr className='ProHr'/>
-        <p className='HrContent'>안녕하십니까<br/>풀스택 개발에 야망을 갖고 있는 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
+        <p className='HrContent'>안녕하십니까 <br/>
+        경력 1년차 백엔드 개발자이지만 <br/>알찬 개발을 진행하고있는 저의 포토폴리오, 한 번 보시겠어요?</p>
         <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/>
         이력서</button>
 
