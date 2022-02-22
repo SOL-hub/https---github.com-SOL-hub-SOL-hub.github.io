@@ -129,7 +129,7 @@ div.NarBar{
   color : #FAF8F8;
   background-color: #00A086;
   border: none;
-  padding: 20px 28px;
+  padding: 18px 28px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 18px;
@@ -198,6 +198,7 @@ div.NarBar{
   margin: auto;
 }
 
+
 .row{
   font-size: 30px;
   font-weight: bold;
@@ -217,6 +218,10 @@ div.NarBar{
 .col-md-4 p{
   font-size: 17px;
   margin-bottom: 1%;
+}
+
+.col-md-4 .box i:hover{
+  color: #00A086;
 }
 
 .subway{
@@ -259,7 +264,10 @@ div.NarBar{
   margin-right: 5px;
 }
 
-
+.EmailModel{
+  background-color: #FAF8F8;
+  font-size: 24px;
+}
 /*Project*/
 .Project{
   width: auto;
@@ -428,9 +436,11 @@ li .git{
   100%{ transform: rotate(0deg);}
 }
 
+
+/* 빈간격설정
 .SkillPadding{
   padding-top: 50px;
-}
+}*/
 
 /*FrontEnd*/
 .FrontEnd{
@@ -461,7 +471,7 @@ li .git{
   display: inline-block;
   width: 43%;
   height: 230px;
-  background-color: #36BC9B;;
+  background-color: #36BC9B;
   border-radius: 8px;
 }
 

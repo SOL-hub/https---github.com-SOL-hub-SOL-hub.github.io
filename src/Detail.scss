@@ -1,0 +1,22 @@
+/*메인색상*/
+
+$mainColor1:#c7E3D5;
+
+$mainColor2:#00A086;
+
+$Background-color:#36BC9B;
+
+$whiteColor:#FAF8F8;
+
+$mainFontColor:#302C2C;
+
+div.container h4{
+
+}
+
+/*nesting문법*/
+div.container{
+    h4{
+        color:#00A086;
+    }
+}

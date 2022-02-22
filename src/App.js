@@ -4,6 +4,17 @@ import './App.css';
 
 import {Link, NavLink, Route, Switch, BrowserRouter} from 'react-router-dom';
 import {Button} from 'react-bootstrap'
+import styled from 'styled-components';
+import "./Detail.scss";
+
+
+let 빈간견설정 = styled.div`
+padding-top: 50px;
+`;
+
+let ParkSol = styled.h3`
+    font-size: 35px;
+`;
 
 
 import parksol from './parksol.png';
@@ -46,6 +57,44 @@ function App() {
 
   let [AboutSol, AboutSolKind] = useState(['박 솔', '서울시 동작구', '상도역', '노량진역', '봉천역', '94.03.17','010-5267-2407', 'thfdl0317@naver.com']);
 
+  let [modal, modal변경] = useState(false);
+
+  let [AboutSolTitle, AboutSolTitleChange]  = useState(['NAME', 'ADDRESS', 'BIRTH', 'TEL', 'E-MAIL']);
+
+
+  
+  function titleName(){
+    var newName = [...AboutSolTitle];
+    newName[0] = '성명 :';
+    AboutSolTitleChange(newName);
+  }
+
+  function titleAddress(){
+    var newAddress = [...AboutSolTitle];
+    newAddress[1] = '지각 못 할 road';
+    AboutSolTitleChange(newAddress);
+  }
+
+  function titleChange(){
+    var newBirth = [...AboutSolTitle];
+    newBirth[2] = '양력의';
+    AboutSolTitleChange(newBirth);
+  }
+
+  function titleTel(){
+    var newTel = [...AboutSolTitle];
+    newTel[3] = '지금 바로';
+    AboutSolTitleChange(newTel);
+  }
+
+  function titleEmail(){
+    var newEmail = [...AboutSolTitle];
+    newEmail[4] = '기다립니다..';
+    AboutSolTitleChange(newEmail);
+  }
+
+
+
   return (
     <div className="App">
   <div className='NavBackGround'>
@@ -82,11 +131,13 @@ function App() {
     </div>
         
       <div className='ProTitle'>
-        <h3>박 솔</h3>
+        <ParkSol>박 솔</ParkSol>
         <p>웹 개발자 SOL's 포토폴리오</p>
         <hr className='ProHr'/>
         <p className='HrContent'>안녕하십니까<br/>풀스택 개발에 야망을 갖고 있는 백엔드 개발자입니다.<br/> 엎치락뒤치락해도 목표까지 묵묵히 도전하는 습관이 저의 강점입니다.</p>
-        <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/></button>
+        <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/>
+        이력서</button>
+
       </div>
 
       <div className='AboutSol'>
@@ -102,13 +153,13 @@ function App() {
               </div>
               <div className='col-md-4'>
                 <div className='box'>
-                <i class="fas fa-user-check fa-2x" ></i> NAME<br/>{AboutSol[0]}
+                <i onClick={titleName} class="fas fa-user-check fa-2x"></i> {AboutSolTitle[0]}<br/>{AboutSol[0]}
                 </div>
               </div>
               
               <div className='col-md-4'>
               <div className='box'>
-                <i class="fas fa-subway fa-2x"></i> ADDRESS <br/>{AboutSol[1]}<br/>
+                <i onClick={titleAddress} class="fas fa-subway fa-2x"></i> {AboutSolTitle[1]}<br/>{AboutSol[1]}<br/>
                   <p>(근처 지하철)</p>
                   <div className='subway'>
                   <div className='subway1'>{AboutSol[2]}</div>
@@ -119,18 +170,26 @@ function App() {
               </div>
               <div className='col-md-4'>
               <div className='box'>
-                <i class="fas fa-birthday-cake fa-2x"></i> BIRTH <br/>{AboutSol[5]}</div>
+                <i onClick={titleChange} class="fas fa-birthday-cake fa-2x"></i> {AboutSolTitle[2]}<br/>{AboutSol[5]}</div>
               </div>
               
               <br/><br/>
               <div className='col-md-4'>
                 <div className='box'>
-                  <i class="fas fa-mobile-alt fa-2x"></i> TEL <br/>{AboutSol[6]}
-                  </div>
+                  <i onClick={titleTel} class="fas fa-mobile-alt fa-2x"></i> {AboutSolTitle[3]}<br/>{AboutSol[6]}
+                </div>
                 </div>
               <div className='col-md-4'>
               <div className='box'>
-              <i class="fas fa-envelope fa-2x"></i> E-MAIL <br/>{AboutSol[7]}</div>
+              <i onClick={titleEmail} class="fas fa-envelope fa-2x"></i> {AboutSolTitle[4]} <br/><div onClick={()=>{modal변경(!modal)}}>{AboutSol[7]}</div><br/>
+              
+             {
+               modal ===true
+             ?<Modal/>:null
+            
+             }
+              </div>
+        
               </div>
           </div>
       </div>
@@ -180,7 +239,7 @@ function App() {
 
           </div>
         </div>
-            <div className='SkillPadding'></div>
+            <빈간견설정/>
 
               <div className='row'>
                   <div className='col-md-3'><p2>Back-end</p2></div>
@@ -619,7 +678,7 @@ function App() {
                 </div>
                 <div className='ArcContent'>
                 <img src={tistory} width='280' height='128'alt='tistory'/>
-                <a href='https://blog.naver.com/thfdl0317'> https://blog.naver.com/thfdl0317</a>
+                <a href='https://thfdl0317.tistory.com/category/Back-end/Spring%20Boot%20Security'> https://thfdl0317.tistory.com/</a>
                 <hr/>
                     <h5>지식공유, 공부정리 목적의 블로그</h5>
                       <ul>
@@ -730,5 +789,14 @@ function App() {
           </div>
 </div>
   );
+}
+
+function Modal(){
+  return (
+    <div className='EmailModel'>
+    이 외 이메일주소<br/>
+    thfdl0317@ptu.ac.kr
+  </div>
+  )
 }
 export default App;
