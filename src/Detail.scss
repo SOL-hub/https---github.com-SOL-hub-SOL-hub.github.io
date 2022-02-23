@@ -2,7 +2,7 @@
 
 $mainColor1:#c7E3D5;
 
-$mainColor2:#00A086;
+$mainHr:#00A086;
 
 $Background-color:#36BC9B;
 
@@ -10,13 +10,292 @@ $whiteColor:#FAF8F8;
 
 $mainFontColor:#302C2C;
 
-div.container h4{
+/*메뉴바*/
+.NavBackGround{
+    background-attachment: fixed;/*고정안돼는데...?*/
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+    background: $whiteColor;
+    padding: 5px;
+  
+  }
 
+  /*메뉴바 폰트*/
+  .NarBar{
+    color : $mainFontColor;
+    display: flex;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+
+  /*ProTile소개글 */
+.ProTitle{
+    width: auto;
+    height: 500px;
+    background-color: $mainColor1;
+  }
+
+  /*Title Hr*/
+  .ProTitle .ProHr{
+    color : $mainHr;
+    height: 5px;
+    width: 35%;
+    border: none;
+    margin: auto;
+  }
+
+  .ProNav{
+    background-color: $whiteColor;
+  }
+
+  /*Resume Button*/
+  .ProTitle .ProBtn{
+    color : $whiteColor;
+    background-color: $mainHr;
+    border: none;
+    padding: 18px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /*Title - About SOL*/
+.AboutSol{
+    padding: 50px;
+    width: auto;
+    height: 820px;
+    background: $whiteColor;
+  }
+
+  .AboutSol .ProHr{
+    color : $mainHr;
+    height: 5px;
+    width: 16%;
+    border: none;
+    margin: auto;
+  }
+
+  /*AboutSol에서 아이콘 접근 시*/
+  .col-md-4 .box i:hover{
+    color: $mainHr;
+  }
+
+/*애니메이션 나뭇잎 움직이기*/
+/*about Sol, skill 완료*/
+.AboutTitle i{
+    animation-name: down;
+    animation-duration: 2s;
+    color: $mainHr;
+  }
+
+  .subway1{
+    width: 15%;
+    height: 22px;
+    background: #747F00;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .subway2{
+    @extend .subway1;
+    background: #0d3692;
+  }
+
+  .subway3{
+    @extend .subway1;
+    background: #33a23d;
+  }
+
+  /*Project*/
+.Project{
+    width: auto;
+    height: auto;
+    background-color:$mainColor1;
+    padding: 30px;
+  }
+
+  .ProjectTitle i{
+    color:$mainHr;
+  }
+
+  /*Hr 통일스타일*/
+  @mixin HrStyle {
+    color :$mainHr;
+    border: none;
+    margin: auto;  
+  }
+
+  .Project .ProHr{
+    @include HrStyle();
+    height: 5px;
+    width: 13%;
+  }
+
+  .ProContent hr{
+    @include HrStyle();
+    height: 3px;
+    width: 90%;
+  }
+
+  .Skills .ProHr{
+    @include HrStyle();
+    height: 5px;
+    width: 9%;
+  }
+
+  /*skill 통일스타일*/
+  @mixin SikllStyle {
+    display: inline-block;
+    height: 230px;
+    background-color:$Background-color;
+    border-radius: 8px;
+  }
+
+  /*Back-end Part*/
+.BackEnd{
+    @include SikllStyle();
+    width: 83%;
+  }
+
+/*FrontEnd Part*/
+  .FrontEnd{
+    @include SikllStyle();
+    width: 90%;
+  }
+
+/*VersionControl Part*/
+  .VersionControl{ 
+    @include SikllStyle();
+    width: 43%;
+  }
+
+@mixin SikllBlock {
+    display: inline-block;
+    padding-top: 10px;
+    height: 180px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px #00A086;
 }
+
+/*skill 흰 칸들*/
+  .back1{
+    @include SikllBlock();
+    padding-top: 10px;
+    width: 80%;
+  }
+
+  .front1{
+    @include SikllBlock();
+    padding-top:10px;
+    width: 11.2%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .verion1{
+    @include SikllBlock();
+    padding-top:10px;
+    width: 70%;
+  }
+
+  .Experience .ProHr{
+    @include HrStyle();
+    height: 5px;
+    width: 33%;
+  }
+
+/*Programming Experience 스타일*/
+@mixin ExperienceStyle {
+    width: 31%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px;
+    padding: 20px;
+}
+
+  .ExperienceContent1{
+    @include ExperienceStyle();
+    display: inline-block;
+  }
+  
+  .ExperienceContent2{
+    @include ExperienceStyle();
+  }
+  
+  /*Programming Experience 폰트스타일*/
+  @mixin ExperienceFontStyle {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+      
+  }
+
+  .ExperienceContent1 p{
+    @include ExperienceFontStyle();
+    margin: 2px;
+  }
+  .ExperienceContent2 p{
+    @include ExperienceFontStyle();
+  }
+
+  .BeforeCareer .ProHr{
+    @include HrStyle();
+    height: 5px;
+    width: 19%;
+  }
+
+  /*BeforeCareer 스타일*/
+
+  @mixin BeforeCareer{
+    width: 31%;
+    height: 380px;
+    display: inline-block;
+    background-color:#FAF8F8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px;
+  }
+  .BeforeCareerContent1{
+    @include BeforeCareer();
+  }
+  
+  .BeforeCareerContent2{
+    @include BeforeCareer();
+  }
+
+  /*Experience 소제목*/
+  @mixin ExperienceTitle {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+
+  .Experience h5{
+    @include ExperienceTitle();
+    font-size: 18px;
+  }
+  
+  .ExperienceContent h4{
+    @include ExperienceTitle();
+  }
+
+  .BeforeCareer h5{
+    @include ExperienceTitle();
+    font-size: 18px;
+  }
 
 /*nesting문법*/
 div.container{
     h4{
-        color:#00A086;
+        color:$mainHr;
     }
 }

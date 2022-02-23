@@ -8,16 +8,17 @@
   text-align: center;
 }
 
+/*
 .NavBackGround{
-  background-attachment: fixed;/*고정안돼는데...?*/
+  background-attachment: fixed;
   position: fixed;
   width: 100%;
   max-width: 100%;
   height: 70px;
   background: #F8F9FA;
   padding: 5px;
-
 }
+*/
 
 .list{
 padding-top: 400px;
@@ -57,13 +58,12 @@ margin: 400px;
   100%{ transform: rotate(0deg);}
 }
 
-
-
 .NarPro{
   padding: 10px 20px;
   font-weight: bold;
 }
 
+/*
 .NarBar{
   color : #302C2C;
   display: flex;
@@ -73,6 +73,7 @@ margin: 400px;
   font-weight: bold;
   
 }
+*/
 
 .NarBar div{
   padding: 9px 30px;
@@ -86,12 +87,12 @@ div.NarBar{
   color:#302C2C;
 }
 
-/*project와 같음 */
+/*project와 같음
 .ProTitle{
   width: auto;
   height: 500px;
   background-color: #c7E3D5;
-}
+} */
 
 /*project와 같음 */
 .ProTitle h3{
@@ -107,6 +108,7 @@ div.NarBar{
   font-size: 45px;
 }
 
+/*
 .ProTitle .ProHr{
   color : #00A086;
   height: 5px;
@@ -114,6 +116,7 @@ div.NarBar{
   border: none;
   margin: auto;
 }
+*/
 
 .ProTitle .HrContent{
   padding-top: 20px;
@@ -121,10 +124,13 @@ div.NarBar{
   font-weight: bold;
 }
 
+/*
 .ProNav{
   background-color: #FAF8F8;
 }
+*/
 
+/*
 .ProTitle .ProBtn{
   color : #FAF8F8;
   background-color: #00A086;
@@ -134,6 +140,7 @@ div.NarBar{
   font-weight: bold;
   font-size: 18px;
 }
+*/
 
 .ProTitle .ProBtn span{
   position:absolute;
@@ -142,13 +149,14 @@ div.NarBar{
   background-image: url('DownButton.svg');
 }
 
-/*About SOL*/
+/*About SOL
 .AboutSol{
   padding: 50px;
   width: auto;
   height: 820px;
   background: #FAF8F8;
 }
+*/
 
 .AboutTitle{
   font-size: 42px;
@@ -156,12 +164,13 @@ div.NarBar{
 }
 
 /*애니메이션 나뭇잎 움직이기*/
-/*about Sol, skill 완료*/
+/*about Sol, skill 완료
 .AboutTitle i{
   animation-name: down;
   animation-duration: 2s;
   color: #00A086;
 }
+*/
 
 .AboutTitle i:hover{
   animation-name: shake;
@@ -190,6 +199,7 @@ div.NarBar{
   100%{ transform: rotate(0deg);}
 }
 
+/*
 .AboutSol .ProHr{
   color : #00A086;
   height: 5px;
@@ -197,6 +207,7 @@ div.NarBar{
   border: none;
   margin: auto;
 }
+*/
 
 
 .row{
@@ -220,9 +231,11 @@ div.NarBar{
   margin-bottom: 1%;
 }
 
+/*
 .col-md-4 .box i:hover{
   color: #00A086;
 }
+*/
 
 .subway{
   display: flex;
@@ -230,6 +243,7 @@ div.NarBar{
   margin-left: 170px;
 }
 
+/*
 .subway1{
   width: 15%;
   height: 22px;
@@ -252,7 +266,6 @@ div.NarBar{
   margin-right: 5px;
 }
 
-
 .subway3{
   width: 15%;
   height: 22px;
@@ -263,18 +276,21 @@ div.NarBar{
   margin-left: 5px;
   margin-right: 5px;
 }
+*/
 
 .EmailModel{
   background-color: #FAF8F8;
   font-size: 24px;
 }
-/*Project*/
+
+/*Project
 .Project{
   width: auto;
   height: auto;
   background-color: #c7E3D5;
   padding: 30px;
 }
+*/
 
 .ProjectTitle{
   padding: 50px 0px 0px 10px;
@@ -282,9 +298,11 @@ div.NarBar{
   font-weight: bold;
 }
 
+/*
 .ProjectTitle i{
   color: #00A086;
 }
+*/
 
 .ProjectContent{
   width: 67%;
@@ -295,6 +313,7 @@ div.NarBar{
   padding: 40px;
 }
 
+/*
 .Project .ProHr{
   color : #00A086;
   height: 5px;
@@ -302,6 +321,7 @@ div.NarBar{
   border: none;
   margin: auto;
 }
+*/
 
 .proMiniTitle{
   width: 100%;
@@ -339,6 +359,7 @@ div.NarBar{
   text-align: left;
 }
 
+/*
 .ProContent hr{
   color: #00A086;
   height: 3px;
@@ -346,6 +367,7 @@ div.NarBar{
   border: none;
   margin: auto;
 }
+*/
 
 .siteSkill{
   width: 100%;
@@ -388,6 +410,7 @@ li .git{
   background-color: white;
 }
 
+/*
 .Skills .ProHr{
   color : #00A086;
   height: 5px;
@@ -395,8 +418,9 @@ li .git{
   border: none;
   margin: auto;
 }
+*/
 
-/*Back-end Part*/
+/*Back-end Part
 .BackEnd{
   display: inline-block;
   width: 83%;
@@ -404,6 +428,7 @@ li .git{
   background-color: #36BC9B;;
   border-radius: 8px;
 }
+*/
 
 .col-md-3 p1{
   color :#36BC9B; /*#14A492;*/
@@ -413,6 +438,7 @@ li .git{
   color : #E8E8E8;
 }
 
+/*
 .back1{
   display: inline-block;
   padding-top: 10px;
@@ -422,6 +448,7 @@ li .git{
   border-radius: 8px;
   box-shadow: 20px 20px 20px #00A086;
 }
+*/
 
 .back1:hover, .front1:hover, .verion1:hover{
   animation-name: shake;
@@ -442,7 +469,7 @@ li .git{
   padding-top: 50px;
 }*/
 
-/*FrontEnd*/
+/*FrontEnd
 .FrontEnd{
   display: inline-block;
   width: 90%;
@@ -450,7 +477,9 @@ li .git{
   background-color: #36BC9B;;
   border-radius: 8px;
 }
+*/
 
+/*
 .front1{
   display: inline-block;
   padding-top:10px;
@@ -462,11 +491,13 @@ li .git{
   margin-left: 10px;
   margin-right: 10px;
 }
+*/
 
 .SkillPadding{
   padding-top: 25px;
 }
 
+/*
 .VersionControl{ 
   display: inline-block;
   width: 43%;
@@ -474,7 +505,9 @@ li .git{
   background-color: #36BC9B;
   border-radius: 8px;
 }
+*/
 
+/*
 .verion1{
   display: inline-block;
   padding-top:10px;
@@ -484,10 +517,10 @@ li .git{
   border-radius: 8px;
   box-shadow: 20px 20px 20px #00A086;
 }
+*/
 
 /*Archiving*/
 .Archiving{
-  
   width: auto;
   height: 690px;
   background-color: #333;
@@ -577,7 +610,7 @@ li .git{
   background-color: #FAF8F8;
 }
 
-
+/*
 .Experience .ProHr{
   color : #00A086;
   height: 5px;
@@ -585,15 +618,16 @@ li .git{
   border: none;
   margin: auto;
 }
-
+*/
 .ExperienceContent{
   width: 100%;
-  height: 460px;
+  height: 640px;
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
 
+/*
 .ExperienceContent1{
   width: 31%;
   display: inline-block;
@@ -610,15 +644,18 @@ li .git{
   margin: 30px;
   padding: 20px;
 }
+*/
 
-
+/*
 .Experience h5{
   text-align: left;
   font-size: 18px;
   font-weight: bold;
   padding: 5px;
 }
+*/
 
+/*
 .ExperienceContent1 p{
   text-align: left;
   font-size: 18px;
@@ -632,20 +669,24 @@ li .git{
   font-weight: bold;
   padding-left: 20px;
 }
+*/
 
+/*
 .ExperienceContent h4{
   text-align: left;
   font-weight: bold;
   padding: 5px;
 }
+*/
 
 /*Before Career*/
 .BeforeCareer{
   width: auto;
-  height: auto;
+  height: 690px;
   background-color: white;
 }
 
+/*
 .BeforeCareer .ProHr{
   color : #00A086;
   height: 5px;
@@ -653,37 +694,40 @@ li .git{
   border: none;
   margin: auto;
 }
+*/
 
-
-
+/*
 .BeforeCareerContent1{
   width: 31%;
-  height: auto;
+  height: 380px;
   display: inline-block;
   background-color:#FAF8F8;
   border-radius: 8px;
-  /*border: 5px solid #00A086;*/
+  /*border: 5px solid #00A086;
   padding: 20px;
   margin: 30px;
 }
 
 .BeforeCareerContent2{
   width: 31%;
-  height: auto;
+  height: 380px;
   display: inline-block;
   background-color:#FAF8F8;
   border-radius: 8px;
-  /*border: 5px solid #00A086;*/
+  /*border: 5px solid #00A086;
   padding: 20px;
   margin: 30px;
 }
+*/
 
+/*
 .BeforeCareer h5{
   text-align: left;
   font-size: 18px;
   font-weight: bold;
   padding: 5px;
 }
+*/
 
 .BeforeCareerContent1 p, .BeforeCareerContent2 p{
   text-align: left;
