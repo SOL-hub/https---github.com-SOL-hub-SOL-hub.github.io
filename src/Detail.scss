@@ -10,8 +10,14 @@ $whiteColor:#FAF8F8;
 
 $mainFontColor:#302C2C;
 
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    color :$mainFontColor;
+    box-sizing: border-box;
+  }
+
 /*메뉴바*/
-.NavBackGround{
+  .NavBackGround{
     background-attachment: fixed;/*고정안돼는데...?*/
     position: fixed;
     width: 100%;
@@ -20,6 +26,10 @@ $mainFontColor:#302C2C;
     background: $whiteColor;
     padding: 5px;
   
+  }
+
+  .NarBar a:hover{
+    color:$mainFontColor;
   }
 
   /*메뉴바 폰트*/
@@ -83,6 +93,22 @@ $mainFontColor:#302C2C;
   .col-md-4 .box i:hover{
     color: $mainHr;
   }
+
+
+.EmailModel{
+  background-color:$whiteColor;
+  font-size: 24px;
+}
+
+.col-md-3 p1{
+    color :$Background-color;
+  }
+  
+  .col-md-3 p2{
+    color : #E8E8E8;
+  }
+  
+
 
 /*애니메이션 나뭇잎 움직이기*/
 /*about Sol, skill 완료*/
@@ -210,6 +236,37 @@ $mainFontColor:#302C2C;
     @include HrStyle();
     height: 5px;
     width: 33%;
+  }
+
+  .ArcTitle i{
+    color: $mainHr;
+  }
+
+  .ArcContent a{
+    color: $mainFontColor;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .Experience{
+    width: auto;
+    height: auto;
+    background-color:$whiteColor;
+  }
+
+  .Final{
+    background-color:$mainFontColor;
+    padding:5px;
+  }
+
+  .FinalIcons2 h5{
+    float: none;
+    clear: both;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background-color:$mainFontColor;
+    color: white;
   }
 
 /*Programming Experience 스타일*/

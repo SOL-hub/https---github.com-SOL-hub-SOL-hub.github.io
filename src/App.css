@@ -1,8 +1,10 @@
+/*
 *{
   font-family: 'Nanum Gothic', sans-serif;
   color : #302C2C;
   box-sizing: border-box;
 }
+*/
 
 .App {
   text-align: center;
@@ -83,9 +85,11 @@ div.NarBar{
   float: right;
 }
 
+/*
 .NarBar a:hover{
   color:#302C2C;
 }
+*/
 
 /*project와 같음
 .ProTitle{
@@ -278,10 +282,12 @@ div.NarBar{
 }
 */
 
+/*
 .EmailModel{
   background-color: #FAF8F8;
   font-size: 24px;
 }
+*/
 
 /*Project
 .Project{
@@ -430,13 +436,15 @@ li .git{
 }
 */
 
+/*
 .col-md-3 p1{
-  color :#36BC9B; /*#14A492;*/
+  color :#36BC9B;
 }
 
 .col-md-3 p2{
   color : #E8E8E8;
 }
+*/
 
 /*
 .back1{
@@ -533,9 +541,11 @@ li .git{
     color:white;
   }
 
+  /*
   .ArcTitle i{
     color: #00A086;
   }
+  */
 
   .ArcTitle i:hover{
     animation-name: shake;
@@ -576,12 +586,13 @@ li .git{
   100%{ transform: rotate(0deg);}
 }
 
-
+/*
 .ArcContent a{
   color: #302C2C;
   font-weight: bold;
   text-decoration: none;
 }
+*/
 
 .ArcContent h5{
   font-weight: bold;
@@ -604,11 +615,14 @@ li .git{
   margin: auto;
 }
 
+
+/*
 .Experience{
   width: auto;
   height: auto;
   background-color: #FAF8F8;
 }
+*/
 
 /*
 .Experience .ProHr{
@@ -736,10 +750,12 @@ li .git{
   padding-left: 20px;
 }
 
+/*
 .Final{
   background-color: #302C2C;
   padding:5px;
 }
+*/
 
 .FinalIcons{
   width: 15%;
@@ -774,6 +790,7 @@ h4 i{
   background:#302C2C;
 }
 
+/*
 .FinalIcons2 h5{
   float: none;
   clear: both;
@@ -782,8 +799,8 @@ h4 i{
   padding: 10px;
   background-color:#302C2C;
   color: white;
-  
 }
+*/
 
 .FinalIcons2 i{
   vertical-align: middle;
