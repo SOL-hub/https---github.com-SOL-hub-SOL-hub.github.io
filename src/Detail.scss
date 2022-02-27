@@ -238,10 +238,6 @@ $mainFontColor:#302C2C;
     width: 33%;
   }
 
-  .ArcTitle i{
-    color: $mainHr;
-  }
-
   .ArcContent a{
     color: $mainFontColor;
     font-weight: bold;
@@ -334,6 +330,24 @@ $mainFontColor:#302C2C;
     text-align: left;
     font-weight: bold;
     padding: 5px;
+}
+
+.BeforeCareerTitle{
+    padding-top:50px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.ExperienceTitle{
+  padding-top:50px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.ProjectTitle{
+  padding-top:50px;
+  font-size: 42px;
+  font-weight: bold;
 }
 
   .Experience h5{

@@ -685,7 +685,7 @@ function App() {
           </div>
 
           <div className='Experience'>
-                      <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[4]} <i class="fab fa-pagelines"></i></div>
+                      <div className='ExperienceTitle' id='NarBarTitle'>{NarBarTitle[4]} <i class="fab fa-pagelines"></i></div>
                         <hr className='ProHr'/><br/><br/>
                       <div className='ExperienceContent'>
                               <div className='ExperienceContent1'>
@@ -724,7 +724,7 @@ function App() {
           </div>
 
           <div className='BeforeCareer'>
-              <div className='ProjectTitle' id='NarBarTitle'>{NarBarTitle[5]} <i class="fab fa-pagelines"></i></div>
+              <div className='BeforeCareerTitle' id='NarBarTitle'>{NarBarTitle[5]} <i class="fab fa-pagelines"></i></div>
                 <hr className='ProHr'/><br/><br/>
               <div className='ExperienceContent'>
                       <div className='BeforeCareerContent1'>
