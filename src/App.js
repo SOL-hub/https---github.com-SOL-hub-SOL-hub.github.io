@@ -122,7 +122,6 @@ function App() {
           
           <div className='list' id={NarBarTitle} key={NarBarTitle}>
 
-              {NarBarTitle}
 
           </div>
 

@@ -250,6 +250,10 @@ $mainFontColor:#302C2C;
     background-color:$whiteColor;
   }
 
+  .Experience i{
+    color: $mainHr;
+  }
+
   .Final{
     background-color:$mainFontColor;
     padding:5px;
@@ -336,6 +340,10 @@ $mainFontColor:#302C2C;
     padding-top:50px;
     font-size: 42px;
     font-weight: bold;
+}
+
+.BeforeCareerTitle i{
+  color:$mainHr;
 }
 
 .ExperienceTitle{
