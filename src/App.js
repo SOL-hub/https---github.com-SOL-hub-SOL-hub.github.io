@@ -135,8 +135,8 @@ function App() {
         <hr className='ProHr'/>
         <p className='HrContent'>안녕하십니까 <br/>
         경력 1년차 백엔드 개발자이지만 <br/>알찬 개발을 진행하고있는 저의 포토폴리오, 한 번 보시겠어요?</p>
-        <button className='ProBtn' id={NarBarTitle}>자세히 알아보기<br/>
-        이력서</button>
+        <button className='ProBtn' id={NarBarTitle}><a href='https://flame-effect-f2a.notion.site/448f176520974373b2ce60928efcf686' className='reSume'>
+        이력서는 여기 클릭</a></button>
 
       </div>
 
@@ -430,7 +430,7 @@ function App() {
               <ul>
                         <li>자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무 경력, 활동사이트등을 간단히 소개</li>
                         <li>React, TypeScript, SASS</li>
-                        <li><a href='#'>SOL's Protfolio</a></li>
+                        <li><a href='https://sol-hub.github.io/'>SOL's Protfolio</a></li>
                       </ul>
               </div>
             </div>
@@ -649,7 +649,7 @@ function App() {
 
                 <div className='ArcContent'>
                   <img src={notionlogo} width='252' height='128' alt='notionlogo'/>
-                  <a href='https://www.notion.so/ko-kr'>https://www.notion.so/ko-kr</a>
+                  <a href='https://flame-effect-f2a.notion.site/448f176520974373b2ce60928efcf686'>https://www.notion.PARK SOL</a>
                   <hr/>
                   <h5>프로그래밍 언어 공부 정리</h5>
                   <ul>
