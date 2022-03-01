@@ -364,7 +364,7 @@ function App() {
             </div>
           </div>
 
-          <div className="SkillPadding"></div>
+          <빈간견설정 />
 
           <div className="row">
             <div className="col-md-3">
@@ -407,7 +407,7 @@ function App() {
             </div>
           </div>
 
-          <div className="SkillPadding"></div>
+          <빈간견설정 />
 
           <div className="row">
             <div className="col-md-3">
