@@ -146,8 +146,7 @@ function App() {
         <hr className="ProHr" />
         <p className="HrContent">
           안녕하십니까 <br />
-          경력 1년차 백엔드 개발자이지만 <br />
-          알찬 개발을 진행하고있는 저의 포토폴리오, 한 번 보시겠어요?
+          경력 1년차 백엔드 개발자 박솔입니다. <br />
         </p>
         <button className="ProBtn" id={NarBarTitle}>
           <a
@@ -463,7 +462,7 @@ function App() {
           <div className="ProjectContent">
             <div className="proMiniTitle">
               <h3>보드살롱 보드게임중고거래 사이트</h3>
-              <p>2022년03월(7인 사이드 프로젝트)</p>
+              <p>2022년03월(7인 사이드 프로젝트- 진행중)</p>
             </div>
             <div className="ProImg">
               <img src={보드살롱} width="630" height="310" alt="보드살롱" />
@@ -475,12 +474,8 @@ function App() {
                 개발자들이 모여 진행하고 있는 MVP 서비스 중고거래 플랫폼을 개발
                 중입니다.
                 <br />
-                <br />
-                SpringBoot와 JPA를 활용, Spring Security를 배우며 <br />
-                적용할 수 있었고 팀 블로그 형태로 운영 중이며,
-                <br />
-                초기 기획부터 런칭까지의 절차를 밟으며 협업할 때의 알아야할
-                지식, 정보를 배울 수 있었던 프로젝트였습니다.
+                SpringBoot와 JPA를 활용, Spring Security를 배우며 적용, 협업할
+                때의 알아야할 지식, 정보등을 공유하며 진행하고 있습니다.
               </div>
               <hr />
               <div className="siteSkill">
@@ -530,7 +525,7 @@ function App() {
           <div className="ProjectContent">
             <div className="proMiniTitle">
               <h3>Protfolio 웹 사이트</h3>
-              <p>2022년01월(1인 개인프로젝트)</p>
+              <p>2022년02월(1인 개인프로젝트)</p>
             </div>
             <div className="ProImg">
               <img src={Protfolio} width="630" height="315" alt="Protfolio" />
@@ -570,7 +565,7 @@ function App() {
                       자기소개, 인적 사항, 보유 기술, 프로젝트/교육 경험, 업무
                       경력, 활동사이트등을 간단히 소개
                     </li>
-                    <li>React, TypeScript, SASS</li>
+                    <li>React, CSS, HTML, SASS</li>
                     <li>
                       <a href="https://sol-hub.github.io/">SOL's Protfolio</a>
                     </li>
